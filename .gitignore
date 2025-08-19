@@ -1,0 +1,68 @@
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+**/.fleet
+**/.idea/
+**/.nova
+**/.vscode
+**/.zed
+### IntelliJ IDEA ###
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Kotlin ###
+.kotlin
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+.env
+**.env
+
+posts-cron/.phpunit.cache
+posts-cron/node_modules
+posts-cron/public/build
+posts-cron/public/hot
+posts-cron/public/storage
+posts-cron/storage/*.key
+posts-cron/storage/pail
+posts-cron/vendor
+posts-cron/vendor/
+posts-cron/bootstrap/cache/
+posts-cron/storage/logs/
+**.phpactor.json
+**.phpunit.result.cache
+posts-cron/Homestead.json
+posts-cron/Homestead.yaml
+posts-cron/npm-debug.log
+posts-cron/yarn-error.log
+posts-cron//auth.json
