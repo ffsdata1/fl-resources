@@ -14,9 +14,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          ref: teams-cron
-          fetch-depth: 0
 
       - name: Set up Amazon Corretto 18.0.2
         uses: actions/setup-java@v4
@@ -46,7 +43,7 @@ jobs:
           if [[ `git status --porcelain` ]]; then
             git add .
             git commit -m "Update output at $(date)"
-            git push origin teams-cron
+            git push origin main
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
           else
             echo "No changes to commit."
@@ -61,8 +58,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          ref: teams-cron
 
       - name: Deploy to ffsdata1
         uses: FirebaseExtended/action-hosting-deploy@v0
