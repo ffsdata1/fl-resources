@@ -66,3 +66,4 @@ posts-cron/Homestead.yaml
 posts-cron/npm-debug.log
 posts-cron/yarn-error.log
 posts-cron//auth.json
+*.log

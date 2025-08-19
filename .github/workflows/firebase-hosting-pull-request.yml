@@ -1,0 +1,105 @@
+name: Teams Cron Job
+
+on:
+  schedule:
+    - cron: '5 0 * * *'  # Chạy lúc 0h05 mỗi ngày
+  workflow_dispatch:      # Cho phép chạy thủ công nếu cần
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+    outputs:
+      has_changes: ${{ steps.check.outputs.has_changes }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: teams-cron
+          fetch-depth: 0
+
+      - name: Set up Amazon Corretto 18.0.2
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'corretto'
+          java-version: '18'
+
+      - name: Set up Gradle
+        uses: gradle/gradle-build-action@v2
+
+      - name: Run Kotlin Main
+        run: |
+          export BASE_SCHEDULE_API='${{ secrets.S_BASE_SCHEDULE_API }}'
+          export HIGH_QUALITY_URL='${{ secrets.S_HIGH_QUALITY_URL }}'
+          export MEDIUM_QUALITY_URL='${{ secrets.S_MEDIUM_QUALITY_URL }}'
+          export DATE_COUNT_TO_FETCH_TEAMS='${{ vars.DATE_COUNT_TO_FETCH_TEAMS }}'
+          export STAGE_HIGH_QUALITY_URL='${{ secrets.S_STAGE_HIGH_QUALITY_URL }}'
+          export STAGE_MEDIUM_QUALITY_URL='${{ secrets.S_STAGE_MEDIUM_QUALITY_URL }}'
+          ./gradlew run
+
+      - name: Check and commit if changes
+        id: check
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if [[ `git status --porcelain` ]]; then
+            git add .
+            git commit -m "Update output at $(date)"
+            git push origin teams-cron
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "No changes to commit."
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  deploy: #ffsdata1
+    needs: build-and-run
+    if: needs.build-and-run.outputs.has_changes == 'true'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: teams-cron
+
+      - name: Deploy to ffsdata1
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FFSDATA1 }}
+          channelId: live
+          projectId: ffsdata1
+
+      - name: Deploy to ffsdata2
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FFSDATA2 }}
+          channelId: live
+          projectId: ffsdata2
+
+      - name: Deploy to ffsdata3
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FFSDATA3 }}
+          channelId: live
+          projectId: ffsdata3
+
+      - name: Deploy to ffsdata4
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FFSDATA4 }}
+          channelId: live
+          projectId: ffsdata4
+
+      - name: Deploy to ffsdata5
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FFSDATA5 }}
+          channelId: live
+          projectId: ffsdata5
