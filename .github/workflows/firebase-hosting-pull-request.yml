@@ -27,6 +27,7 @@ jobs:
       - name: Run Kotlin Main
         run: |
           export BASE_SCHEDULE_API='${{ secrets.S_BASE_SCHEDULE_API }}'
+          export IMAGES_BASE_URL='${{ secrets.S_IMAGES_BASE_URL }}'
           export HIGH_QUALITY_URL='${{ secrets.S_HIGH_QUALITY_URL }}'
           export MEDIUM_QUALITY_URL='${{ secrets.S_MEDIUM_QUALITY_URL }}'
           export DATE_COUNT_TO_FETCH_TEAMS='${{ vars.DATE_COUNT_TO_FETCH_TEAMS }}'
