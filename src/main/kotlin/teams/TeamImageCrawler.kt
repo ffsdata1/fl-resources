@@ -14,6 +14,7 @@ object TeamImageCrawler {
     private val json = Json { ignoreUnknownKeys = true }
 
     val staticImageTeams = mutableMapOf<String, String>()
+    val teamSquad = mutableMapOf<String, Long>()
 
     fun fetchTeamImages() {
         initData()
@@ -28,6 +29,9 @@ object TeamImageCrawler {
             .filter { !it.Img.isNullOrBlank() }
             .distinctBy { it.ID }
         distinctTeams.forEachIndexed { index, team ->
+            if (!teamSquad.contains(team.ID)) {
+                teamSquad[team.ID] = 0
+            }
             crawTeamImage(
                 team.ID,
                 team.Nm,
@@ -36,15 +40,7 @@ object TeamImageCrawler {
                 String.format("%04d/%04d", index + 1, distinctTeams.size)
             )
         }
-        distinctTeams.forEachIndexed { index, team ->
-            crawTeamImage(
-                team.ID,
-                team.Nm,
-                staticImageTeams[team.ID],
-                team.Img.orEmpty(),
-                String.format("%04d/%04d", index + 1, distinctTeams.size)
-            )
-        }
+
         val distinctStages = stageBadges
             .filter { !it.badge.isNullOrBlank() }
             .distinctBy { it.Sid }
@@ -59,10 +55,15 @@ object TeamImageCrawler {
 
     fun initData() {
         val staticImgJson = File("assets/config/static-map.json").readText()
+        val teamSquadJson = File("assets/config/team-squad.json").readText()
         staticImageTeams.clear()
         staticImageTeams.putAll(json.decodeFromString<Map<String, String>>(staticImgJson).filter {
             it.value.isNotBlank()
         })
+        teamSquad.clear()
+        teamSquad.putAll(
+            json.decodeFromString<Map<String, Long>>(teamSquadJson)
+        )
     }
 
     private fun crawTeamImage(ID: String, Nm: String, StaticImg: String?, Img: String, index: String) {
