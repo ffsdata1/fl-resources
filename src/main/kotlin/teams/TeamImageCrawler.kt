@@ -36,6 +36,15 @@ object TeamImageCrawler {
                 String.format("%04d/%04d", index + 1, distinctTeams.size)
             )
         }
+        distinctTeams.forEachIndexed { index, team ->
+            crawTeamImage(
+                team.ID,
+                team.Nm,
+                staticImageTeams[team.ID],
+                team.Img.orEmpty(),
+                String.format("%04d/%04d", index + 1, distinctTeams.size)
+            )
+        }
         val distinctStages = stageBadges
             .filter { !it.badge.isNullOrBlank() }
             .distinctBy { it.Sid }
@@ -71,37 +80,78 @@ object TeamImageCrawler {
                 println("$index CRAW STATIC FAIL WITH NO STATIC FILE: $ID $Nm $StaticImg to $Img")
             }
         }
-        // Try to crawl high-quality image
-        val highQualityUrl = "${getEnv(Constant.ENV_HIGH_QUALITY_URL)}$Img"
-        val highQualitySuccess = ImageCrawlerUtil.crawlImage(highQualityUrl, destinationPath)
-        if (highQualitySuccess) {
-            println("$index CRAW SUCCESS - HIGH QUALITY: $ID $Nm $Img")
-        } else {
-            // If high-quality fails, try medium-quality
-            val mediumQualityUrl = "${getEnv(Constant.ENV_MEDIUM_QUALITY_URL)}$Img"
-            val mediumQualitySuccess = ImageCrawlerUtil.crawlImage(mediumQualityUrl, destinationPath)
-            if (mediumQualitySuccess) {
-                println("$index CRAW SUCCESS - MEDIUM QUALITY: $ID $Nm $Img")
-            } else {
-                println("$index \uD83D\uDD25 \uD83D\uDD25 \uD83D\uDD25CRAW FAIL: $ID $Nm $Img")
+
+        val imagesBaseUrl = "${getEnv(Constant.ENV_IMAGES_BASE_URL)}"
+        val qualityPaths = listOf(
+            "3xl",
+            "high",
+            "medium"
+        )
+        var crawResult = false
+        for (quality in qualityPaths) {
+            val imageUrl = "$imagesBaseUrl/team/$quality/$Img"
+            crawResult = ImageCrawlerUtil.crawlImage(imageUrl, destinationPath)
+            if (crawResult) {
+                println("$index TEAM IMAGE CRAW SUCCESS - ${quality.uppercase()} QUALITY: $ID $Nm $Img")
+                break
             }
         }
+        if (!crawResult) {
+            println("$index \uD83D\uDD25 \uD83D\uDD25 \uD83D\uDD25 TEAM IMAGE CRAW FAIL: $ID $Nm $Img")
+        }
+
+        // Try to crawl high-quality image
+//        val highQualityUrl = "${getEnv(Constant.ENV_HIGH_QUALITY_URL)}$Img"
+//        val highQualitySuccess = ImageCrawlerUtil.crawlImage(highQualityUrl, destinationPath)
+//        if (highQualitySuccess) {
+//            println("$index CRAW SUCCESS - HIGH QUALITY: $ID $Nm $Img")
+//        } else {
+//            // If high-quality fails, try medium-quality
+//            val mediumQualityUrl = "${getEnv(Constant.ENV_MEDIUM_QUALITY_URL)}$Img"
+//            val mediumQualitySuccess = ImageCrawlerUtil.crawlImage(mediumQualityUrl, destinationPath)
+//            if (mediumQualitySuccess) {
+//                println("$index CRAW SUCCESS - MEDIUM QUALITY: $ID $Nm $Img")
+//            } else {
+//                println("$index \uD83D\uDD25 \uD83D\uDD25 \uD83D\uDD25CRAW FAIL: $ID $Nm $Img")
+//            }
+//        }
     }
 
     private fun crawStageBadge(id: String, badge: String, index: String) {
         val destinationPath = "$stageBadgeImagePath$badge"
-        val highQualityUrl = "${getEnv(Constant.ENV_STAGE_HIGH_QUALITY_URL)}$badge"
-        val success = ImageCrawlerUtil.crawlImage(highQualityUrl, destinationPath)
-        if (success) {
-            println("$index CRAW SUCCESS - STAGE BADGE - HIGH QUALITY: $id $badge $index")
-        } else {
-            val mediumUrl = "${getEnv(Constant.ENV_STAGE_MEDIUM_QUALITY_URL)}$badge"
-            val mediumSuccess = ImageCrawlerUtil.crawlImage(mediumUrl, destinationPath)
-            if (mediumSuccess) {
-                println("$index CRAW SUCCESS - STAGE BADGE - MEDIUM QUALITY: $id $badge $index")
-            } else {
-                println("$index \uD83D\uDD25 \uD83D\uDD25 \uD83D\uDD25CRAW FAIL: $id $badge $index")
+
+        val imagesBaseUrl = "${getEnv(Constant.ENV_IMAGES_BASE_URL)}"
+        val qualityPaths = listOf(
+            "3xl",
+            "high",
+            "medium"
+        )
+
+        var crawResult = false
+        for (quality in qualityPaths) {
+            val imageUrl = "$imagesBaseUrl/competition/$quality/$badge"
+            crawResult = ImageCrawlerUtil.crawlImage(imageUrl, destinationPath)
+            if (crawResult) {
+                println("$index COMPETITION IMAGE CRAW SUCCESS - ${quality.uppercase()} QUALITY: $id $badge")
+                break
             }
         }
+        if (!crawResult) {
+            println("$index \uD83D\uDD25 \uD83D\uDD25 \uD83D\uDD25 COMPETITION IMAGE CRAW FAIL: $id $badge")
+        }
+
+//        val highQualityUrl = "${getEnv(Constant.ENV_STAGE_HIGH_QUALITY_URL)}$badge"
+//        val success = ImageCrawlerUtil.crawlImage(highQualityUrl, destinationPath)
+//        if (success) {
+//            println("$index CRAW SUCCESS - STAGE BADGE - HIGH QUALITY: $id $badge $index")
+//        } else {
+//            val mediumUrl = "${getEnv(Constant.ENV_STAGE_MEDIUM_QUALITY_URL)}$badge"
+//            val mediumSuccess = ImageCrawlerUtil.crawlImage(mediumUrl, destinationPath)
+//            if (mediumSuccess) {
+//                println("$index CRAW SUCCESS - STAGE BADGE - MEDIUM QUALITY: $id $badge $index")
+//            } else {
+//                println("$index \uD83D\uDD25 \uD83D\uDD25 \uD83D\uDD25CRAW FAIL: $id $badge $index")
+//            }
+//        }
     }
 }
