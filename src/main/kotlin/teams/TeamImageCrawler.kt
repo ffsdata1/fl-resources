@@ -2,19 +2,36 @@ package teams
 
 import Constant
 import extension.getEnv
+import io.github.cdimascio.dotenv.dotenv
+import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import utils.ImageCrawlerUtil
 import java.io.File
+import java.util.Calendar
 
 object TeamImageCrawler {
     private const val teamImagePath = "assets/image/teams/"
     private const val teamStaticImagePath = "assets/static/teams/"
     private const val stageBadgeImagePath = "assets/image/competitions/"
+    private const val playerHeadShotPath = "assets/image/players/"
 
     private val json = Json { ignoreUnknownKeys = true }
 
     val staticImageTeams = mutableMapOf<String, String>()
     val teamSquad = mutableMapOf<String, Long>()
+
+    fun initData() {
+        val staticImgJson = File("assets/config/static-map.json").readText()
+        val teamSquadJson = File("assets/config/team-squad.json").readText()
+        staticImageTeams.clear()
+        staticImageTeams.putAll(json.decodeFromString<Map<String, String>>(staticImgJson).filter {
+            it.value.isNotBlank()
+        })
+        teamSquad.clear()
+        teamSquad.putAll(
+            json.decodeFromString<Map<String, Long>>(teamSquadJson)
+        )
+    }
 
     fun fetchTeamImages() {
         initData()
@@ -40,7 +57,7 @@ object TeamImageCrawler {
                 String.format("%04d/%04d", index + 1, distinctTeams.size)
             )
         }
-
+        saveTeamSquad()
         val distinctStages = stageBadges
             .filter { !it.badge.isNullOrBlank() }
             .distinctBy { it.Sid }
@@ -53,17 +70,26 @@ object TeamImageCrawler {
         }
     }
 
-    fun initData() {
-        val staticImgJson = File("assets/config/static-map.json").readText()
-        val teamSquadJson = File("assets/config/team-squad.json").readText()
-        staticImageTeams.clear()
-        staticImageTeams.putAll(json.decodeFromString<Map<String, String>>(staticImgJson).filter {
-            it.value.isNotBlank()
-        })
-        teamSquad.clear()
-        teamSquad.putAll(
-            json.decodeFromString<Map<String, Long>>(teamSquadJson)
-        )
+
+    fun crawTeamSquad() {
+        initData()
+        val teams = teamSquad.toList().sortedBy {
+            it.second
+        }.take(10)
+
+        teams.forEach { (teamId, _) ->
+            teamSquad[teamId] = Calendar.getInstance().timeInMillis
+        }
+        saveTeamSquad()
+        val players = teams.flatMap {
+            val squad = TeamExtractor.fetchTeamSquad(it.first)
+            squad.Ps.filter { player ->
+                !player.ImageUrl.isNullOrBlank()
+            }
+        }.distinctBy { it.Pid }
+        players.forEachIndexed { index, player ->
+            crawPlayerHeadshot(player, index, players.size)
+        }
     }
 
     private fun crawTeamImage(ID: String, Nm: String, StaticImg: String?, Img: String, index: String) {
@@ -154,5 +180,31 @@ object TeamImageCrawler {
 //                println("$index \uD83D\uDD25 \uD83D\uDD25 \uD83D\uDD25CRAW FAIL: $id $badge $index")
 //            }
 //        }
+    }
+
+    private fun crawPlayerHeadshot(player: Player, index: Int, total: Int) {
+        val destinationPath = "$playerHeadShotPath${player.ImageUrl}"
+        val imagesBaseUrl = "${getEnv(Constant.ENV_IMAGES_BASE_URL)}"
+        val qualityPaths = listOf(
+            "3xl",
+            "high",
+            "medium"
+        )
+        var crawResult = false
+        for (quality in qualityPaths) {
+            val imageUrl = "$imagesBaseUrl/headshots/$quality/${player.ImageUrl}"
+            crawResult = ImageCrawlerUtil.crawlImage(imageUrl, destinationPath)
+            if (crawResult) {
+                println("$index PLAYER IMAGE CRAW SUCCESS - ${quality.uppercase()} QUALITY: ${player.Pid} ${player.Pnm}")
+                break
+            }
+        }
+        if (!crawResult) {
+            println("$index \uD83D\uDD25 \uD83D\uDD25 \uD83D\uDD25 PLAYER IMAGE CRAW FAIL: ${player.Pid} ${player.Pnm}")
+        }
+    }
+
+    private fun saveTeamSquad() {
+        File("assets/config/team-squad.json").writeText(json.encodeToString(teamSquad))
     }
 }

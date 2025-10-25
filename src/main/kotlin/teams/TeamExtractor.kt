@@ -28,6 +28,19 @@ data class CrawData(
 @Serializable
 data class Root(val Stages: List<Stage> = emptyList())
 
+@Serializable
+data class Player(
+    val Pid: String,
+    val Pnm: String? = null,
+    val ImageUrl: String? = null
+)
+
+@Serializable
+data class TeamSquad(
+    val ID: String,
+    val Ps: List<Player> = emptyList()
+)
+
 object TeamExtractor {
 
     private val client = OkHttpClient.Builder().build()
@@ -57,6 +70,21 @@ object TeamExtractor {
         val date = LocalDate.now().plusDays(dayOffset.toLong())
         val formatted = date.format(DateTimeFormatter.ofPattern("yyyyMMdd"))
         return "${getEnv(Constant.ENV_BASE_API_URL)}/$formatted/0?MD=0"
+    }
+
+    fun fetchTeamSquad(teamId: String): TeamSquad {
+        try {
+            val url = "https://prod-cdn-team-api.lsmedia7.com/v1/api/app/team/$teamId/squad?locale=en"
+            val request = Request.Builder().url(url).build()
+            client.newCall(request).execute().use { response ->
+                if (!response.isSuccessful) error("Unexpected code $response")
+                val body = response.body?.string() ?: return TeamSquad(teamId, emptyList())
+                val data = json.decodeFromString<TeamSquad>(body)
+                return data
+            }
+        } catch (e: Throwable) {
+            return TeamSquad(teamId, emptyList())
+        }
     }
 
     private fun fetchJsonFromUrl(url: String): String {
