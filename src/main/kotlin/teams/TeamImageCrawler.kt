@@ -195,12 +195,28 @@ object TeamImageCrawler {
             val imageUrl = "$imagesBaseUrl/headshots/$quality/${player.ImageUrl}"
             crawResult = ImageCrawlerUtil.crawlImage(imageUrl, destinationPath)
             if (crawResult) {
-                println("$index PLAYER IMAGE CRAW SUCCESS - ${quality.uppercase()} QUALITY: ${player.Pid} ${player.Pnm}")
+                println(
+                    "${
+                        String.format(
+                            "%04d/%04d",
+                            index + 1,
+                            total
+                        )
+                    } PLAYER IMAGE CRAW SUCCESS - ${quality.uppercase()} QUALITY: ${player.Pid} ${player.Pnm}"
+                )
                 break
             }
         }
         if (!crawResult) {
-            println("$index \uD83D\uDD25 \uD83D\uDD25 \uD83D\uDD25 PLAYER IMAGE CRAW FAIL: ${player.Pid} ${player.Pnm}")
+            println(
+                "${
+                    String.format(
+                        "%04d/%04d",
+                        index + 1,
+                        total
+                    )
+                } \uD83D\uDD25 \uD83D\uDD25 \uD83D\uDD25 PLAYER IMAGE CRAW FAIL: ${player.Pid} ${player.Pnm}"
+            )
         }
     }
 

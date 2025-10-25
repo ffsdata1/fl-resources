@@ -1,5 +1,6 @@
 object Constant {
     const val ENV_BASE_API_URL = "BASE_SCHEDULE_API"
+    const val ENV_TEAM_DETAIL_API = "TEAM_DETAIL_API"
     const val ENV_IMAGES_BASE_URL = "IMAGES_BASE_URL"
 
     const val ENV_HIGH_QUALITY_URL = "HIGH_QUALITY_URL"

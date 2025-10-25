@@ -74,7 +74,8 @@ object TeamExtractor {
 
     fun fetchTeamSquad(teamId: String): TeamSquad {
         try {
-            val url = "https://prod-cdn-team-api.lsmedia7.com/v1/api/app/team/$teamId/squad?locale=en"
+            val url = "${getEnv(Constant.ENV_TEAM_DETAIL_API)}/$teamId/squad?locale=en"
+
             val request = Request.Builder().url(url).build()
             client.newCall(request).execute().use { response ->
                 if (!response.isSuccessful) error("Unexpected code $response")
