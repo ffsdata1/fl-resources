@@ -78,7 +78,7 @@ object TeamImageCrawler {
         initData()
         val teams = teamSquad.toList().sortedBy {
             it.second
-        }.take(10)
+        }.take(100)
 
         teams.forEach { (teamId, _) ->
             teamSquad[teamId] = Calendar.getInstance().timeInMillis
