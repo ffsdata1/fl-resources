@@ -15,7 +15,10 @@ object TeamImageCrawler {
     private const val stageBadgeImagePath = "assets/image/competitions/"
     private const val playerHeadShotPath = "assets/image/players/"
 
-    private val json = Json { ignoreUnknownKeys = true }
+    private val json = Json {
+        ignoreUnknownKeys = true
+        prettyPrint = true
+    }
 
     val staticImageTeams = mutableMapOf<String, String>()
     val teamSquad = mutableMapOf<String, Long>()
@@ -75,7 +78,7 @@ object TeamImageCrawler {
         initData()
         val teams = teamSquad.toList().sortedBy {
             it.second
-        }.take(100)
+        }.take(10)
 
         teams.forEach { (teamId, _) ->
             teamSquad[teamId] = Calendar.getInstance().timeInMillis
