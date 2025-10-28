@@ -113,8 +113,8 @@ object TeamImageCrawler {
 
         val imagesBaseUrl = "${getEnv(Constant.ENV_IMAGES_BASE_URL)}"
         val qualityPaths = listOf(
-//            "3xl",
-//            "high",
+           "3xl",
+           "high",
             "medium"
         )
         var crawResult = false
@@ -189,8 +189,8 @@ object TeamImageCrawler {
         val destinationPath = "$playerHeadShotPath${player.ImageUrl}"
         val imagesBaseUrl = "${getEnv(Constant.ENV_IMAGES_BASE_URL)}"
         val qualityPaths = listOf(
-            "3xl",
-            "high",
+            // "3xl",
+            // "high",
             "medium"
         )
         var crawResult = false
