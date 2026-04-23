@@ -92,3 +92,11 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FFSDATA9 }}
           channelId: live
           projectId: ffsdata9
+
+      - name: Deploy to ffsdata10
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FFSDATA10 }}
+          channelId: live
+          projectId: ffsdata10
