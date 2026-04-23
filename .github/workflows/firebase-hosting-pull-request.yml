@@ -2,6 +2,8 @@ name: Post Images Cron Job
 
 on:
   push:
+    branches:
+      - posts
     paths:
       - 'assets/config/pending-posts.json'
 
@@ -41,7 +43,7 @@ jobs:
           if [[ `git status --porcelain` ]]; then
             git add .
             git commit -m "Update output at $(date)"
-            git push origin main
+            git push origin posts
             echo "has_changes=true" >> "$GITHUB_OUTPUT"
           else
             echo "No changes to commit."
@@ -56,6 +58,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          ref: posts
 
       - name: Deploy to ffsdata6
         uses: FirebaseExtended/action-hosting-deploy@v0
