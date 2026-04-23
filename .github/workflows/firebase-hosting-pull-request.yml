@@ -1,8 +1,10 @@
-name: Teams Cron Job
+name: Post Images Cron Job
 
 on:
-  schedule:
-    - cron: '5 0 * * *'  # Chạy lúc 0h05 mỗi ngày
+  push:
+    paths:
+      - 'assets/config/pending-posts.json'
+
   workflow_dispatch:      # Cho phép chạy thủ công nếu cần
 
 jobs:
@@ -26,12 +28,8 @@ jobs:
 
       - name: Run Kotlin Main
         run: |
-          export BASE_SCHEDULE_API='${{ secrets.S_BASE_SCHEDULE_API }}'
-          export HIGH_QUALITY_URL='${{ secrets.S_HIGH_QUALITY_URL }}'
-          export MEDIUM_QUALITY_URL='${{ secrets.S_MEDIUM_QUALITY_URL }}'
-          export DATE_COUNT_TO_FETCH_TEAMS='${{ vars.DATE_COUNT_TO_FETCH_TEAMS }}'
-          export STAGE_HIGH_QUALITY_URL='${{ secrets.S_STAGE_HIGH_QUALITY_URL }}'
-          export STAGE_MEDIUM_QUALITY_URL='${{ secrets.S_STAGE_MEDIUM_QUALITY_URL }}'
+          export POST_IMAGE_DOMAIN='${{ secrets.S_POST_IMAGE_DOMAIN }}'
+          
           ./gradlew run
 
       - name: Check and commit if changes
@@ -59,42 +57,34 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Deploy to ffsdata1
+      - name: Deploy to ffsdata6
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FFSDATA1 }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FFSDATA6 }}
           channelId: live
-          projectId: ffsdata1
+          projectId: ffsdata6
 
-      - name: Deploy to ffsdata2
+      - name: Deploy to ffsdata7
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FFSDATA2 }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FFSDATA7 }}
           channelId: live
-          projectId: ffsdata2
+          projectId: ffsdata7
 
-      - name: Deploy to ffsdata3
+      - name: Deploy to ffsdata8
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FFSDATA3 }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FFSDATA8 }}
           channelId: live
-          projectId: ffsdata3
+          projectId: ffsdata8
 
-      - name: Deploy to ffsdata4
+      - name: Deploy to ffsdata9
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FFSDATA4 }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FFSDATA9 }}
           channelId: live
-          projectId: ffsdata4
-
-      - name: Deploy to ffsdata5
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FFSDATA5 }}
-          channelId: live
-          projectId: ffsdata5
+          projectId: ffsdata9
