@@ -31,6 +31,8 @@ jobs:
       - name: Run Kotlin Main
         run: |
           export POST_IMAGE_DOMAIN='${{ secrets.S_POST_IMAGE_DOMAIN }}'
+          export ADMIN_URL='${{ secrets.S_ADMIN_URL }}'
+          export SECRET_KEY='${{ secrets.S_ADMIN_SECRET_KEY }}'
           
           ./gradlew run
 

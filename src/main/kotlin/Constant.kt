@@ -8,4 +8,7 @@ object Constant {
     const val ENV_DATE_COUNT_TO_FETCH_TEAMS = "DATE_COUNT_TO_FETCH_TEAMS"
 
     const val ENV_POST_IMAGES_DOMAIN = "POST_IMAGE_DOMAIN"
+
+    const val ENV_ADMIN_URL = "ADMIN_URL"
+    const val ENV_SECRET_KEY = "SECRET_KEY"
 }

@@ -3,6 +3,7 @@ package posts
 import Constant
 import extension.getEnv
 import kotlinx.serialization.json.Json
+import utils.HttpRequestUtil
 import utils.ImageCrawlerUtil
 import java.io.File
 
@@ -50,7 +51,41 @@ object PostImageCrawler {
             }
         }
 
+        if (successPosts.isNotEmpty()) {
+            publishPostImages(successPosts.map { it.id })
+        }
+
         println("Crawled success posts: ${successPosts.map { it.id }}")
+    }
+
+    fun publishPostImages(postIds: List<String>) {
+        val secretKey = "${getEnv(Constant.ENV_SECRET_KEY)}"
+        if (secretKey.isBlank()) {
+            println("SECRET_KEY is missing")
+            return
+        }
+
+        if (postIds.isEmpty()) {
+            println("No post IDs provided")
+            return
+        }
+
+        val baseUrl = getEnv(Constant.ENV_ADMIN_URL).orEmpty()
+        if (baseUrl.isBlank()) {
+            println("ADMIN_URL is missing")
+            return
+        }
+
+        val endpoint = "$baseUrl/api/fastscore/posts/publish"
+
+        val bodyMap = mapOf("post_ids" to postIds)
+        val (success, error) = HttpRequestUtil.doPost(endpoint, bodyMap, mapOf("Authorization" to "Bearer $secretKey"))
+        if (success) {
+            println("PUBLISH SUCCESS: $postIds")
+        } else {
+//            println(endpoint)
+//            println("PUBLISH FAIL: $postIds | error=$error")
+        }
     }
 
     private fun loadPendingPosts(): List<PendingPost> {
