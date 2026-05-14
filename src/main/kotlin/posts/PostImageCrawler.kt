@@ -40,6 +40,7 @@ object PostImageCrawler {
             val postBlocksDir = File(postImagesPath, post.id).path
 
             post.pendingBlocks?.forEach { block ->
+                System.out.println("${index + 1}/${block.id}")
                 val blockExt = File(block.imagePath).extension.let { if (it.isNotEmpty()) ".$it" else "" }
                 val blockImageUrl = "$postImageDomain${block.imagePath}"
                 val blockSuccess = crawlAndOptimizeImage(blockImageUrl, block.id, blockExt, postBlocksDir)
