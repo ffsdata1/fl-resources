@@ -30,24 +30,24 @@ object PostImageCrawler {
 
         val successPosts = mutableListOf<PendingPost>()
         pendingPosts.forEachIndexed { index, post ->
+            println("${index + 1}/${pendingPosts.size} PROCESSING POST: ${post.id}")
+            var allSuccess = true
+
             val imageUrl = "$postImageDomain${post.imagePath}"
-            val rawOutputPath = File(postImagesPath, "${post.id}raw${post.imageExt}").path
-            val outputPath = File(postImagesPath, "${post.id}${post.imageExt}").path
-            val crawlOutputPath = if (enableRawImage) rawOutputPath else outputPath
-            val success = ImageCrawlerUtil.crawlImage(imageUrl, crawlOutputPath)
-            if (success) {
-                if (enableRawImage) {
-                    File(rawOutputPath).copyTo(File(outputPath), overwrite = true)
-                }
-                val optimized = ImageCrawlerUtil.resizeAndCompressIfNeeded(
-                    outputPath = outputPath,
-                    maxWidth = postImageMaxWidth
-                )
+            val success = crawlAndOptimizeImage(imageUrl, post.id, post.imageExt, postImagesPath)
+            if (!success) allSuccess = false
+
+            val postBlocksDir = File(postImagesPath, post.id).path
+
+            post.pendingBlocks?.forEach { block ->
+                val blockExt = File(block.imagePath).extension.let { if (it.isNotEmpty()) ".$it" else "" }
+                val blockImageUrl = "$postImageDomain${block.imagePath}"
+                val blockSuccess = crawlAndOptimizeImage(blockImageUrl, block.id, blockExt, postBlocksDir)
+                if (!blockSuccess) allSuccess = false
+            }
+
+            if (allSuccess) {
                 successPosts.add(post)
-                val rawLog = if (enableRawImage) "raw=$rawOutputPath, " else ""
-                println("${index + 1}/${pendingPosts.size} CRAW SUCCESS: ${post.id} -> ${rawLog}optimized=$outputPath, optimizedSuccess=$optimized")
-            } else {
-                println("${index + 1}/${pendingPosts.size} CRAW FAIL: ${post.id} ($imageUrl)")
             }
         }
 
@@ -56,6 +56,29 @@ object PostImageCrawler {
         }
 
         println("Crawled success posts: ${successPosts.map { it.id }}")
+    }
+
+    private fun crawlAndOptimizeImage(imageUrl: String, imageId: String, imageExt: String, outputDir: String): Boolean {
+        File(outputDir).mkdirs()
+        val rawOutputPath = File(outputDir, "${imageId}raw${imageExt}").path
+        val outputPath = File(outputDir, "${imageId}${imageExt}").path
+        val crawlOutputPath = if (enableRawImage) rawOutputPath else outputPath
+        val success = ImageCrawlerUtil.crawlImage(imageUrl, crawlOutputPath)
+        if (success) {
+            if (enableRawImage) {
+                File(rawOutputPath).copyTo(File(outputPath), overwrite = true)
+            }
+            val optimized = ImageCrawlerUtil.resizeAndCompressIfNeeded(
+                outputPath = outputPath,
+                maxWidth = postImageMaxWidth
+            )
+            val rawLog = if (enableRawImage) "raw=$rawOutputPath, " else ""
+            println("  -> CRAW SUCCESS: ${imageId} -> ${rawLog}optimized=$outputPath, optimizedSuccess=$optimized")
+            return true
+        } else {
+            println("  -> CRAW FAIL: ${imageId} ($imageUrl)")
+            return false
+        }
     }
 
     fun publishPostImages(postIds: List<String>) {
