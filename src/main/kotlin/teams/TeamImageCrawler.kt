@@ -223,6 +223,31 @@ object TeamImageCrawler {
         }
     }
 
+    fun optimizeStaticImages() {
+        println("Starting image optimization in $teamStaticImagePath...")
+        val rootDir = File(teamStaticImagePath)
+        if (!rootDir.exists() || !rootDir.isDirectory) {
+            println("Directory $teamStaticImagePath does not exist or is not a directory.")
+            return
+        }
+
+        var totalFiles = 0
+        var optimizedFiles = 0
+
+        rootDir.walkTopDown().forEach { file ->
+            if (file.isFile) {
+                val ext = file.extension.lowercase()
+                if (ext == "png" || ext == "jpg" || ext == "jpeg" || ext == "gif") {
+                    totalFiles++
+                    if (ImageCrawlerUtil.optimizeImageSize(file, maxSizeBytes = 20480L)) {
+                        optimizedFiles++
+                    }
+                }
+            }
+        }
+        println("Optimization finished. Processed $totalFiles images. Optimized $optimizedFiles images that exceeded 20KB.")
+    }
+
     private fun saveTeamSquad() {
         File("assets/config/team-squad.json").writeText(json.encodeToString(teamSquad))
     }

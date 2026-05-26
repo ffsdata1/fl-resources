@@ -5,4 +5,5 @@ import teams.TeamImageCrawler
 fun main() {
     TeamImageCrawler.fetchTeamImages()
     TeamImageCrawler.crawTeamSquad()
+    TeamImageCrawler.optimizeStaticImages()
 }
