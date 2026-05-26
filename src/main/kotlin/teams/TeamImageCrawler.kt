@@ -2,12 +2,18 @@ package teams
 
 import Constant
 import extension.getEnv
-import io.github.cdimascio.dotenv.dotenv
+import kotlinx.serialization.Serializable
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import utils.ImageCrawlerUtil
 import java.io.File
-import java.util.Calendar
+import java.util.*
+
+@Serializable
+data class StaticTeamInfo(
+    val logo: String,
+    val name: String = ""
+)
 
 object TeamImageCrawler {
     private const val teamImagePath = "assets/image/teams/"
@@ -20,15 +26,15 @@ object TeamImageCrawler {
         prettyPrint = true
     }
 
-    val staticImageTeams = mutableMapOf<String, String>()
+    val staticImageTeams = mutableMapOf<String, StaticTeamInfo>()
     val teamSquad = mutableMapOf<String, Long>()
 
     fun initData() {
         val staticImgJson = File("assets/config/static-map.json").readText()
         val teamSquadJson = File("assets/config/team-squad.json").readText()
         staticImageTeams.clear()
-        staticImageTeams.putAll(json.decodeFromString<Map<String, String>>(staticImgJson).filter {
-            it.value.isNotBlank()
+        staticImageTeams.putAll(json.decodeFromString<Map<String, StaticTeamInfo>>(staticImgJson).filter {
+            it.value.logo.isNotBlank()
         })
         teamSquad.clear()
         teamSquad.putAll(
@@ -55,7 +61,7 @@ object TeamImageCrawler {
             crawTeamImage(
                 team.ID,
                 team.Nm,
-                staticImageTeams[team.ID],
+                staticImageTeams[team.ID]?.logo,
                 team.Img.orEmpty(),
                 String.format("%04d/%04d", index + 1, distinctTeams.size)
             )
@@ -113,8 +119,8 @@ object TeamImageCrawler {
 
         val imagesBaseUrl = "${getEnv(Constant.ENV_IMAGES_BASE_URL)}"
         val qualityPaths = listOf(
-           "3xl",
-           "high",
+            "3xl",
+            "high",
             "medium"
         )
         var crawResult = false
