@@ -1177,19 +1177,19 @@
     },
     "335": {
         "logo": "enet/5810.png",
-        "name": ""
+        "name": "Canada"
     },
     "336": {
         "logo": "enet/5886.png",
-        "name": ""
+        "name": "Barbados"
     },
     "3368": {
         "logo": "enet/8520.png",
-        "name": ""
+        "name": "Sweden"
     },
     "3369": {
         "logo": "enet/5794.png",
-        "name": ""
+        "name": "Moldova"
     },
     "3417": {
         "logo": "enet/300702.png",
@@ -1233,7 +1233,7 @@
     },
     "4012": {
         "logo": "enet/430156.png",
-        "name": ""
+        "name": "Kosovo"
     },
     "425": {
         "logo": "enet/298068.png",
@@ -1245,11 +1245,11 @@
     },
     "4505": {
         "logo": "enet/8536.png",
-        "name": ""
+        "name": "Iceland"
     },
     "4873": {
         "logo": "enet/6327.png",
-        "name": ""
+        "name": "El Salvador"
     },
     "6074": {
         "logo": "enet/1121168.png",
@@ -1257,19 +1257,19 @@
     },
     "6186": {
         "logo": "enet/5884.png",
-        "name": ""
+        "name": "Kenya"
     },
     "6187": {
         "logo": "enet/7941.png",
-        "name": ""
+        "name": "Tanzania"
     },
     "6188": {
         "logo": "enet/6713.png",
-        "name": ""
+        "name": "USA"
     },
     "6189": {
         "logo": "enet/6705.png",
-        "name": ""
+        "name": "Costa Rica"
     },
     "6192": {
         "logo": "enet/5890.png",
@@ -1277,11 +1277,11 @@
     },
     "6325": {
         "logo": "enet/7804.png",
-        "name": ""
+        "name": "South Korea"
     },
     "6326": {
         "logo": "enet/6715.png",
-        "name": ""
+        "name": "Japan"
     },
     "6338": {
         "logo": "enet/244164.png",
@@ -1297,7 +1297,7 @@
     },
     "6341": {
         "logo": "enet/5822.png",
-        "name": ""
+        "name": "China"
     },
     "6344": {
         "logo": "enet/5904.png",
@@ -1317,15 +1317,15 @@
     },
     "6728": {
         "logo": "enet/5805.png",
-        "name": ""
+        "name": "Sudan"
     },
     "6796": {
         "logo": "enet/121284.png",
-        "name": ""
+        "name": "Burundi"
     },
     "6873": {
         "logo": "enet/6321.png",
-        "name": ""
+        "name": "DR Congo"
     },
     "6878": {
         "logo": "enet/408231.png",
@@ -1345,15 +1345,15 @@
     },
     "7219": {
         "logo": "enet/5901.png",
-        "name": ""
+        "name": "Bahrain"
     },
     "7220": {
         "logo": "enet/7795.png",
-        "name": ""
+        "name": "Saudi Arabia"
     },
     "7718": {
         "logo": "enet/5902.png",
-        "name": ""
+        "name": "Qatar"
     },
     "7751": {
         "logo": "enet/625785.png",
@@ -1361,7 +1361,7 @@
     },
     "7760": {
         "logo": "enet/5819.png",
-        "name": ""
+        "name": "Iraq"
     },
     "7781": {
         "logo": "enet/624481.png",
@@ -1377,15 +1377,15 @@
     },
     "7883": {
         "logo": "enet/5824.png",
-        "name": ""
+        "name": "Oman"
     },
     "7887": {
         "logo": "enet/5821.png",
-        "name": ""
+        "name": "Kuwait"
     },
     "7910": {
         "logo": "enet/5789.png",
-        "name": ""
+        "name": "UAE"
     },
     "81898": {
         "logo": "enet/1360019.png",
@@ -1441,19 +1441,19 @@
     },
     "8530": {
         "logo": "enet/10057.png",
-        "name": ""
+        "name": "Belarus"
     },
     "8531": {
         "logo": "enet/8700.png",
-        "name": ""
+        "name": "Uzbekistan"
     },
     "8625": {
         "logo": "enet/10150.png",
-        "name": ""
+        "name": "Bulgaria"
     },
     "8663": {
         "logo": "enet/5797.png",
-        "name": ""
+        "name": "Bolivia"
     },
     "86789": {
         "logo": "enet/298065.png",
@@ -1469,7 +1469,7 @@
     },
     "8870": {
         "logo": "enet/5858.png",
-        "name": ""
+        "name": "Guatemala"
     },
     "8871": {
         "logo": "enet/6101.png",
@@ -1477,11 +1477,11 @@
     },
     "8962": {
         "logo": "enet/5790.png",
-        "name": ""
+        "name": "Wales"
     },
     "8963": {
         "logo": "enet/8565.png",
-        "name": ""
+        "name": "Hungary"
     },
     "8964": {
         "logo": "enet/5856.png",
@@ -1493,35 +1493,35 @@
     },
     "8966": {
         "logo": "enet/5857.png",
-        "name": ""
+        "name": "Cuba"
     },
     "8967": {
         "logo": "enet/6708.png",
-        "name": ""
+        "name": "Netherlands"
     },
     "8968": {
         "logo": "enet/8261.png",
-        "name": ""
+        "name": "Estonia"
     },
     "8969": {
         "logo": "enet/262134.png",
-        "name": ""
+        "name": "Dominican Republic"
     },
     "8973": {
         "logo": "enet/6707.png",
-        "name": ""
+        "name": "Ecuador"
     },
     "8974": {
         "logo": "enet/8258.png",
-        "name": ""
+        "name": "Colombia"
     },
     "8977": {
         "logo": "enet/6328.png",
-        "name": ""
+        "name": "Libya"
     },
     "8991": {
         "logo": "enet/6320.png",
-        "name": ""
+        "name": "Syria"
     },
     "8992": {
         "logo": "enet/230139.png",
@@ -1529,15 +1529,15 @@
     },
     "8993": {
         "logo": "enet/8568.png",
-        "name": ""
+        "name": "Poland"
     },
     "8994": {
         "logo": "enet/5787.png",
-        "name": ""
+        "name": "Slovenia"
     },
     "8995": {
         "logo": "enet/6724.png",
-        "name": ""
+        "name": "Paraguay"
     },
     "8996": {
         "logo": "enet/8589.png",
@@ -1545,19 +1545,19 @@
     },
     "8999": {
         "logo": "enet/5756.png",
-        "name": ""
+        "name": "Puerto Rico"
     },
     "9000": {
         "logo": "enet/262132.png",
-        "name": ""
+        "name": "Anguilla"
     },
     "9002": {
         "logo": "enet/8323.png",
-        "name": ""
+        "name": "Equatorial Guinea"
     },
     "9003": {
         "logo": "enet/6719.png",
-        "name": ""
+        "name": "Tunisia"
     },
     "9004": {
         "logo": "enet/6333.png",
@@ -1577,19 +1577,19 @@
     },
     "9009": {
         "logo": "enet/6709.png",
-        "name": ""
+        "name": "Ivory Coast"
     },
     "9010": {
         "logo": "enet/8256.png",
-        "name": ""
+        "name": "Brazil"
     },
     "9011": {
         "logo": "enet/8497.png",
-        "name": ""
+        "name": "Slovakia"
     },
     "9012": {
         "logo": "enet/8566.png",
-        "name": ""
+        "name": "Azerbaijan"
     },
     "9014": {
         "logo": "enet/5830.png",
@@ -1601,11 +1601,11 @@
     },
     "9016": {
         "logo": "enet/8570.png",
-        "name": ""
+        "name": "Germany"
     },
     "9017": {
         "logo": "enet/10259.png",
-        "name": ""
+        "name": "Northern Ireland"
     },
     "9018": {
         "logo": "enet/268834.png",
@@ -1629,15 +1629,15 @@
     },
     "9024": {
         "logo": "enet/6324.png",
-        "name": ""
+        "name": "Indonesia"
     },
     "9025": {
         "logo": "enet/6710.png",
-        "name": ""
+        "name": "Mexico"
     },
     "9026": {
         "logo": "enet/5943.png",
-        "name": ""
+        "name": "Bermuda"
     },
     "9027": {
         "logo": "enet/358691.png",
@@ -1649,35 +1649,35 @@
     },
     "9029": {
         "logo": "enet/8498.png",
-        "name": ""
+        "name": "Scotland"
     },
     "9030": {
         "logo": "enet/8265.png",
-        "name": ""
+        "name": "Kazakhstan"
     },
     "9031": {
         "logo": "enet/5798.png",
-        "name": ""
+        "name": "Peru"
     },
     "9032": {
         "logo": "enet/9762.png",
-        "name": ""
+        "name": "Chile"
     },
     "9033": {
         "logo": "enet/5799.png",
-        "name": ""
+        "name": "Liechtenstein"
     },
     "9034": {
         "logo": "enet/10106.png",
-        "name": ""
+        "name": "Bosnia and Herzegovina"
     },
     "9035": {
         "logo": "enet/6329.png",
-        "name": ""
+        "name": "India"
     },
     "9036": {
         "logo": "enet/127408.png",
-        "name": ""
+        "name": "Saint Lucia"
     },
     "9037": {
         "logo": "enet/262133.png",
@@ -1685,11 +1685,11 @@
     },
     "9038": {
         "logo": "enet/5825.png",
-        "name": ""
+        "name": "Singapore"
     },
     "9039": {
         "logo": "enet/8269.png",
-        "name": ""
+        "name": "Faroe Islands"
     },
     "9040": {
         "logo": "enet/5828.png",
@@ -1709,11 +1709,11 @@
     },
     "9044": {
         "logo": "enet/287980.png",
-        "name": ""
+        "name": "Dominica"
     },
     "9045": {
         "logo": "enet/5923.png",
-        "name": ""
+        "name": "Saint Vincent and The Grenadines"
     },
     "9046": {
         "logo": "enet/401872.png",
@@ -1733,19 +1733,19 @@
     },
     "9050": {
         "logo": "enet/262136.png",
-        "name": ""
+        "name": "U.S. Virgin Islands"
     },
     "9051": {
         "logo": "enet/929189.png",
-        "name": ""
+        "name": "Saint Martin"
     },
     "9052": {
         "logo": "enet/5791.png",
-        "name": ""
+        "name": "Ireland"
     },
     "9053": {
         "logo": "enet/8238.png",
-        "name": ""
+        "name": "Denmark"
     },
     "9054": {
         "logo": "enet/168833.png",
@@ -1789,7 +1789,7 @@
     },
     "9066": {
         "logo": "enet/5888.png",
-        "name": ""
+        "name": "Cape Verde"
     },
     "9067": {
         "logo": "enet/5965.png",
@@ -1797,7 +1797,7 @@
     },
     "9068": {
         "logo": "enet/5816.png",
-        "name": ""
+        "name": "Jordan"
     },
     "9069": {
         "logo": "enet/5896.png",
@@ -1813,7 +1813,7 @@
     },
     "9073": {
         "logo": "enet/6035.png",
-        "name": ""
+        "name": "San Marino"
     },
     "9075": {
         "logo": "enet/821848.png",
@@ -1837,7 +1837,7 @@
     },
     "9085": {
         "logo": "enet/95971.png",
-        "name": ""
+        "name": "Mongolia"
     },
     "9086": {
         "logo": "enet/5928.png",
@@ -1873,31 +1873,31 @@
     },
     "9097": {
         "logo": "enet/49437.png",
-        "name": ""
+        "name": "Montenegro"
     },
     "9098": {
         "logo": "enet/8204.png",
-        "name": ""
+        "name": "Italy"
     },
     "9099": {
         "logo": "enet/6583.png",
-        "name": ""
+        "name": "Armenia"
     },
     "9100": {
         "logo": "enet/6706.png",
-        "name": ""
+        "name": "Argentina"
     },
     "9101": {
         "logo": "enet/5796.png",
-        "name": ""
+        "name": "Uruguay"
     },
     "9103": {
         "logo": "enet/5800.png",
-        "name": ""
+        "name": "Venezuela"
     },
     "9104": {
         "logo": "enet/287982.png",
-        "name": ""
+        "name": "Cayman Islands"
     },
     "9105": {
         "logo": "enet/5931.png",
@@ -1905,15 +1905,15 @@
     },
     "9109": {
         "logo": "enet/8263.png",
-        "name": ""
+        "name": "Belgium"
     },
     "9110": {
         "logo": "enet/5793.png",
-        "name": ""
+        "name": "Cyprus"
     },
     "9111": {
         "logo": "enet/6262.png",
-        "name": ""
+        "name": "Morocco"
     },
     "9112": {
         "logo": "enet/95799.png",
@@ -1933,7 +1933,7 @@
     },
     "9116": {
         "logo": "enet/6714.png",
-        "name": ""
+        "name": "Ghana"
     },
     "9117": {
         "logo": "enet/401884.png",
@@ -1969,15 +1969,15 @@
     },
     "9128": {
         "logo": "enet/6277.png",
-        "name": ""
+        "name": "Zambia"
     },
     "9129": {
         "logo": "enet/6290.png",
-        "name": ""
+        "name": "Zimbabwe"
     },
     "9130": {
         "logo": "enet/5894.png",
-        "name": ""
+        "name": "Vietnam"
     },
     "9131": {
         "logo": "enet/5788.png",
@@ -1989,43 +1989,43 @@
     },
     "9133": {
         "logo": "enet/8260.png",
-        "name": ""
+        "name": "North Macedonia"
     },
     "9134": {
         "logo": "enet/8567.png",
-        "name": ""
+        "name": "Israel"
     },
     "9135": {
         "logo": "enet/10045.png",
-        "name": ""
+        "name": "Andorra"
     },
     "9136": {
         "logo": "enet/6595.png",
-        "name": ""
+        "name": "Turkiye"
     },
     "9137": {
         "logo": "enet/262131.png",
-        "name": ""
+        "name": "Aruba"
     },
     "9138": {
         "logo": "enet/10155.png",
-        "name": ""
+        "name": "Croatia"
     },
     "9139": {
         "logo": "enet/8268.png",
-        "name": ""
+        "name": "Georgia"
     },
     "9140": {
         "logo": "enet/6548.png",
-        "name": ""
+        "name": "Grenada"
     },
     "9141": {
         "logo": "enet/127409.png",
-        "name": ""
+        "name": "Belize"
     },
     "9142": {
         "logo": "enet/5893.png",
-        "name": ""
+        "name": "Kyrgyzstan"
     },
     "9143": {
         "logo": "enet/5898.png",
@@ -2033,11 +2033,11 @@
     },
     "9144": {
         "logo": "enet/230692.png",
-        "name": ""
+        "name": "Comoros"
     },
     "9145": {
         "logo": "enet/10255.png",
-        "name": ""
+        "name": "Egypt"
     },
     "9146": {
         "logo": "enet/6635.png",
@@ -2057,19 +2057,19 @@
     },
     "9152": {
         "logo": "enet/507764.png",
-        "name": ""
+        "name": "Gibraltar"
     },
     "9153": {
         "logo": "enet/6717.png",
-        "name": ""
+        "name": "Switzerland"
     },
     "9154": {
         "logo": "enet/5806.png",
-        "name": ""
+        "name": "Jamaica"
     },
     "9155": {
         "logo": "enet/6222.png",
-        "name": ""
+        "name": "Guyana"
     },
     "9156": {
         "logo": "enet/401890.png",
@@ -2081,11 +2081,11 @@
     },
     "9160": {
         "logo": "enet/5795.png",
-        "name": ""
+        "name": "Latvia"
     },
     "9161": {
         "logo": "enet/8255.png",
-        "name": ""
+        "name": "Austria"
     },
     "9162": {
         "logo": "enet/8494.png",
@@ -2097,15 +2097,15 @@
     },
     "9166": {
         "logo": "enet/5887.png",
-        "name": ""
+        "name": "Botswana"
     },
     "9167": {
         "logo": "enet/6317.png",
-        "name": ""
+        "name": "Algeria"
     },
     "9168": {
         "logo": "enet/5807.png",
-        "name": ""
+        "name": "Nicaragua"
     },
     "9169": {
         "logo": "enet/127411.png",
@@ -2125,7 +2125,7 @@
     },
     "9174": {
         "logo": "enet/7740.png",
-        "name": ""
+        "name": "Togo"
     },
     "9176": {
         "logo": "enet/201142.png",
@@ -2137,19 +2137,19 @@
     },
     "9178": {
         "logo": "enet/10024.png",
-        "name": ""
+        "name": "Albania"
     },
     "9179": {
         "logo": "enet/6723.png",
-        "name": ""
+        "name": "France"
     },
     "9182": {
         "logo": "enet/6720.png",
-        "name": ""
+        "name": "Spain"
     },
     "9183": {
         "logo": "enet/9730.png",
-        "name": ""
+        "name": "Romania"
     },
     "9185": {
         "logo": "enet/5853.png",
@@ -2161,15 +2161,15 @@
     },
     "9187": {
         "logo": "enet/929188.png",
-        "name": ""
+        "name": "Bonaire"
     },
     "9188": {
         "logo": "enet/73596.png",
-        "name": ""
+        "name": "Bahamas"
     },
     "9189": {
         "logo": "enet/68374.png",
-        "name": ""
+        "name": "Mauritania"
     },
     "9190": {
         "logo": "enet/230693.png",
@@ -2177,11 +2177,11 @@
     },
     "9191": {
         "logo": "enet/121281.png",
-        "name": ""
+        "name": "Niger"
     },
     "9192": {
         "logo": "enet/5809.png",
-        "name": ""
+        "name": "Madagascar"
     },
     "9193": {
         "logo": "enet/5900.png",
@@ -2221,11 +2221,11 @@
     },
     "9203": {
         "logo": "enet/8495.png",
-        "name": ""
+        "name": "Malta"
     },
     "9204": {
         "logo": "enet/8492.png",
-        "name": ""
+        "name": "Norway"
     },
     "9205": {
         "logo": "enet/5801.png",
@@ -2233,15 +2233,15 @@
     },
     "9206": {
         "logo": "enet/230700.png",
-        "name": ""
+        "name": "Guinea-Bissau"
     },
     "9209": {
         "logo": "enet/5808.png",
-        "name": ""
+        "name": "Honduras"
     },
     "9210": {
         "logo": "enet/7724.png",
-        "name": ""
+        "name": "Trinidad and Tobago"
     },
     "9211": {
         "logo": "enet/131400.png",
@@ -2261,15 +2261,15 @@
     },
     "9227": {
         "logo": "enet/6383.png",
-        "name": ""
+        "name": "Greece"
     },
     "9228": {
         "logo": "enet/7871.png",
-        "name": ""
+        "name": "Finland"
     },
     "9230": {
         "logo": "enet/5979.png",
-        "name": ""
+        "name": "Gambia"
     },
     "9232": {
         "logo": "enet/5942.png",
@@ -2289,11 +2289,11 @@
     },
     "9236": {
         "logo": "enet/8254.png",
-        "name": ""
+        "name": "Lithuania"
     },
     "9237": {
         "logo": "enet/5820.png",
-        "name": ""
+        "name": "New Zealand"
     },
     "9241": {
         "logo": "enet/74876.png",
@@ -2305,11 +2305,11 @@
     },
     "9244": {
         "logo": "enet/8205.png",
-        "name": ""
+        "name": "Serbia"
     },
     "9245": {
         "logo": "enet/6718.png",
-        "name": ""
+        "name": "Ukraine"
     },
     "9247": {
         "logo": "enet/5818.png",
@@ -2325,7 +2325,7 @@
     },
     "9250": {
         "logo": "enet/5924.png",
-        "name": ""
+        "name": "St. Kitts and Nevis"
     },
     "9251": {
         "logo": "enet/5812.png",
@@ -2345,7 +2345,7 @@
     },
     "9256": {
         "logo": "enet/5802.png",
-        "name": ""
+        "name": "Namibia"
     },
     "9257": {
         "logo": "enet/4167.png",
@@ -2353,11 +2353,11 @@
     },
     "9258": {
         "logo": "enet/6346.png",
-        "name": ""
+        "name": "Nigeria"
     },
     "9259": {
         "logo": "enet/5889.png",
-        "name": ""
+        "name": "Gabon"
     },
     "9260": {
         "logo": "enet/6712.png",
@@ -2377,35 +2377,35 @@
     },
     "9266": {
         "logo": "enet/8496.png",
-        "name": ""
+        "name": "Czechia"
     },
     "9267": {
         "logo": "enet/8491.png",
-        "name": ""
+        "name": "England"
     },
     "9272": {
         "logo": "enet/5885.png",
-        "name": ""
+        "name": "Rwanda"
     },
     "9273": {
         "logo": "enet/6629.png",
-        "name": ""
+        "name": "Cameroon"
     },
     "9287": {
         "logo": "enet/6316.png",
-        "name": ""
+        "name": "South Africa"
     },
     "9294": {
         "logo": "enet/5792.png",
-        "name": ""
+        "name": "Luxembourg"
     },
     "9295": {
         "logo": "enet/8361.png",
-        "name": ""
+        "name": "Portugal"
     },
     "9297": {
         "logo": "enet/6323.png",
-        "name": ""
+        "name": "Burkina Faso"
     },
     "9314": {
         "logo": "enet/4433.png",
@@ -2413,7 +2413,7 @@
     },
     "9315": {
         "logo": "enet/6395.png",
-        "name": ""
+        "name": "Senegal"
     },
     "9332": {
         "logo": "enet/5815.png",
@@ -2421,11 +2421,11 @@
     },
     "9352": {
         "logo": "enet/5883.png",
-        "name": ""
+        "name": "Benin"
     },
     "9353": {
         "logo": "enet/5803.png",
-        "name": ""
+        "name": "Sierra Leone"
     },
     "9358": {
         "logo": "enet/394247.png",
@@ -2437,7 +2437,7 @@
     },
     "9360": {
         "logo": "enet/6020.png",
-        "name": ""
+        "name": "Malawi"
     },
     "9374": {
         "logo": "enet/391933.png",
@@ -2457,7 +2457,7 @@
     },
     "9488": {
         "logo": "enet/5922.png",
-        "name": ""
+        "name": "Panama"
     },
     "9493": {
         "logo": "enet/5850.png",
@@ -2469,7 +2469,7 @@
     },
     "9510": {
         "logo": "enet/5859.png",
-        "name": ""
+        "name": "Martinique"
     },
     "9513": {
         "logo": "enet/604110.png",
@@ -2521,11 +2521,11 @@
     },
     "9566": {
         "logo": "enet/262135.png",
-        "name": ""
+        "name": "British Virgin Islands"
     },
     "9567": {
         "logo": "enet/287981.png",
-        "name": ""
+        "name": "Curacao"
     },
     "9570": {
         "logo": "enet/8504.png",
@@ -2533,7 +2533,7 @@
     },
     "9580": {
         "logo": "enet/929190.png",
-        "name": ""
+        "name": "Sint Maarten"
     },
     "9582": {
         "logo": "enet/5851.png",
@@ -2549,15 +2549,15 @@
     },
     "9590": {
         "logo": "enet/95797.png",
-        "name": ""
+        "name": "Bangladesh"
     },
     "9592": {
         "logo": "enet/6716.png",
-        "name": ""
+        "name": "Australia"
     },
     "9593": {
         "logo": "enet/6711.png",
-        "name": ""
+        "name": "Iran"
     },
     "9594": {
         "logo": "enet/394250.png",
@@ -2713,7 +2713,7 @@
     },
     "9875": {
         "logo": "enet/5804.png",
-        "name": ""
+        "name": "Liberia"
     },
     "9876": {
         "logo": "enet/1078286.png",
@@ -2789,11 +2789,11 @@
     },
     "9184": {
         "logo": "enet/5934.png",
-        "name": ""
+        "name": "Haiti"
     },
     "9255": {
         "logo": "teambadge/guinea-2024.png",
-        "name": ""
+        "name": "Guinea"
     },
     "9331": {
         "logo": "enet/4432.png",
