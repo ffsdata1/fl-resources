@@ -248,8 +248,8 @@
         "name": "Moldova U21"
     },
     "10572": {
-        "logo": "enet/354857.png",
-        "name": ""
+        "logo": "enet/8495.png",
+        "name": "Malta U17"
     },
     "10573": {
         "logo": "enet/399620.png",
@@ -948,8 +948,8 @@
         "name": ""
     },
     "161712": {
-        "logo": "enet/410059.png",
-        "name": ""
+        "logo": "enet/8495.png",
+        "name": "Malta U19 W"
     },
     "161713": {
         "logo": "enet/5792.png",
@@ -1848,8 +1848,8 @@
         "name": "Greece U19"
     },
     "9090": {
-        "logo": "enet/401896.png",
-        "name": ""
+        "logo": "enet/8495.png",
+        "name": "Malta U19"
     },
     "9091": {
         "logo": "enet/5793.png",
@@ -2092,8 +2092,8 @@
         "name": "Denmark U21"
     },
     "9163": {
-        "logo": "enet/5829.png",
-        "name": ""
+        "logo": "enet/8495.png",
+        "name": "Malta U21"
     },
     "9166": {
         "logo": "enet/5887.png",
@@ -2428,8 +2428,8 @@
         "name": "Sierra Leone"
     },
     "9358": {
-        "logo": "enet/394247.png",
-        "name": ""
+        "logo": "enet/8495.png",
+        "name": "Malta W"
     },
     "9359": {
         "logo": "enet/8268.png",
@@ -3034,5 +3034,9 @@
     "286978": {
         "logo": "enet/5859.png",
         "name": "Martinique U20"
+    },
+    "11117": {
+        "logo": "enet/8495.png",
+        "name": "Malta U17 W"
     }
 }
