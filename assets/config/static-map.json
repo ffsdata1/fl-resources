@@ -716,8 +716,8 @@
         "name": ""
     },
     "12431": {
-        "logo": "enet/624173.png",
-        "name": ""
+        "logo": "enet/5898.png",
+        "name": "Tajikistan U23"
     },
     "12434": {
         "logo": "enet/5897.png",
@@ -3146,5 +3146,9 @@
     "135425": {
         "logo": "enet/7941.png",
         "name": "Tanzania U20"
+    },
+    "9905": {
+        "logo": "enet/5898.png",
+        "name": "Tajikistan U17"
     }
 }
