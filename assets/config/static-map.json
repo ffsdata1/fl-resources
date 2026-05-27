@@ -448,8 +448,8 @@
         "name": "Iceland Women"
     },
     "10900": {
-        "logo": "enet/659332.png",
-        "name": ""
+        "logo": "enet/5800.png",
+        "name": "Venezuela W"
     },
     "10901": {
         "logo": "enet/1015780.png",
@@ -756,8 +756,8 @@
         "name": ""
     },
     "12586": {
-        "logo": "enet/169439.png",
-        "name": ""
+        "logo": "enet/5800.png",
+        "name": "Venezuela U20"
     },
     "12596": {
         "logo": "enet/5877.png",
@@ -3062,5 +3062,9 @@
     "10020": {
         "logo": "enet/5820.png",
         "name": "New Zealand U17"
+    },
+    "249256": {
+        "logo": "enet/5800.png",
+        "name": "Venezuela U17"
     }
 }
