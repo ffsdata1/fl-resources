@@ -860,8 +860,8 @@
         "name": "El Salvador U20"
     },
     "14602": {
-        "logo": "enet/5869.png",
-        "name": ""
+        "logo": "enet/5810.png",
+        "name": "Canada U20"
     },
     "14603": {
         "logo": "enet/5858.png",
@@ -2340,8 +2340,8 @@
         "name": "France Women"
     },
     "9254": {
-        "logo": "enet/74873.png",
-        "name": ""
+        "logo": "enet/5810.png",
+        "name": "Canada W"
     },
     "9256": {
         "logo": "enet/5802.png",
@@ -3194,5 +3194,9 @@
     "323513": {
         "logo": "enet/262131.png",
         "name": "Aruba"
+    },
+    "10019": {
+        "logo": "enet/5810.png",
+        "name": "Canada U17"
     }
 }
