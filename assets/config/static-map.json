@@ -84,8 +84,8 @@
         "name": ""
     },
     "10118": {
-        "logo": "enet/402153.png",
-        "name": ""
+        "logo": "enet/6718.png",
+        "name": "Ukraine U17 W"
     },
     "10131": {
         "logo": "enet/394070.png",
@@ -460,8 +460,8 @@
         "name": "Montenegro U19 W"
     },
     "10918": {
-        "logo": "enet/402154.png",
-        "name": ""
+        "logo": "enet/6718.png",
+        "name": "Ukraine U19 W"
     },
     "10919": {
         "logo": "enet/8265.png",
@@ -1780,8 +1780,8 @@
         "name": ""
     },
     "9064": {
-        "logo": "enet/74660.png",
-        "name": ""
+        "logo": "enet/6718.png",
+        "name": "Ukraine U17"
     },
     "9065": {
         "logo": "enet/201141.png",
@@ -1860,8 +1860,8 @@
         "name": ""
     },
     "9094": {
-        "logo": "enet/6655.png",
-        "name": ""
+        "logo": "enet/6718.png",
+        "name": "Ukraine U19"
     },
     "9095": {
         "logo": "enet/5963.png",
@@ -1956,8 +1956,8 @@
         "name": ""
     },
     "9122": {
-        "logo": "enet/6658.png",
-        "name": ""
+        "logo": "enet/6718.png",
+        "name": "Ukraine U21"
     },
     "9123": {
         "logo": "enet/10024.png",
@@ -2628,8 +2628,8 @@
         "name": ""
     },
     "9651": {
-        "logo": "enet/131398.png",
-        "name": ""
+        "logo": "enet/6718.png",
+        "name": "Ukraine Women"
     },
     "9663": {
         "logo": "enet/5793.png",
@@ -3078,5 +3078,13 @@
     "396959": {
         "logo": "enet/6713.png",
         "name": "USA U21"
+    },
+    "290202": {
+        "logo": "enet/6718.png",
+        "name": "Ukraine U23"
+    },
+    "11705": {
+        "logo": "enet/6718.png",
+        "name": "Ukraine U20"
     }
 }
