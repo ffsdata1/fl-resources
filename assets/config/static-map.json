@@ -664,8 +664,8 @@
         "name": ""
     },
     "11781": {
-        "logo": "enet/67321.png",
-        "name": ""
+        "logo": "enet/5820.png",
+        "name": "New Zealand U20"
     },
     "11782": {
         "logo": "enet/5862.png",
@@ -916,8 +916,8 @@
         "name": "France U23"
     },
     "159392": {
-        "logo": "enet/316154.png",
-        "name": ""
+        "logo": "enet/5820.png",
+        "name": "New Zealand U23"
     },
     "159393": {
         "logo": "enet/1249011.png",
@@ -1044,8 +1044,8 @@
         "name": ""
     },
     "233519": {
-        "logo": "enet/929534.png",
-        "name": ""
+        "logo": "enet/5820.png",
+        "name": "New Zealand U19"
     },
     "234301": {
         "logo": "enet/6715.png",
@@ -2296,8 +2296,8 @@
         "name": "New Zealand"
     },
     "9241": {
-        "logo": "enet/74876.png",
-        "name": ""
+        "logo": "enet/5820.png",
+        "name": "New Zealand Women"
     },
     "9242": {
         "logo": "enet/394233.png",
@@ -3058,5 +3058,9 @@
     "12779": {
         "logo": "enet/5807.png",
         "name": "Nicaragua U20"
+    },
+    "10020": {
+        "logo": "enet/5820.png",
+        "name": "New Zealand U17"
     }
 }
