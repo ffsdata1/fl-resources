@@ -688,8 +688,8 @@
         "name": "Honduras U20"
     },
     "11827": {
-        "logo": "enet/5880.png",
-        "name": ""
+        "logo": "enet/6710.png",
+        "name": "Mexico U20"
     },
     "11952": {
         "logo": "enet/967026.png",
@@ -1308,8 +1308,8 @@
         "name": ""
     },
     "6349": {
-        "logo": "enet/5907.png",
-        "name": ""
+        "logo": "enet/6710.png",
+        "name": "Mexico W"
     },
     "6350": {
         "logo": "enet/5896.png",
@@ -3022,5 +3022,9 @@
     "192715": {
         "logo": "enet/6020.png",
         "name": "Malawi W"
+    },
+    "9172": {
+        "logo": "enet/6710.png",
+        "name": "Mexico U17"
     }
 }
