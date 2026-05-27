@@ -964,8 +964,8 @@
         "name": "China U20"
     },
     "173030": {
-        "logo": "enet/794818.png",
-        "name": ""
+        "logo": "enet/6711.png",
+        "name": "Iran W"
     },
     "174768": {
         "logo": "enet/507764.png",
@@ -1088,8 +1088,8 @@
         "name": "Honduras U17"
     },
     "247243": {
-        "logo": "enet/831860.png",
-        "name": ""
+        "logo": "enet/6711.png",
+        "name": "Iran U20"
     },
     "247244": {
         "logo": "enet/5819.png",
@@ -1204,8 +1204,8 @@
         "name": ""
     },
     "3475": {
-        "logo": "enet/622101.png",
-        "name": ""
+        "logo": "enet/6711.png",
+        "name": "Iran U23"
     },
     "3537": {
         "logo": "enet/298067.png",
@@ -2958,5 +2958,9 @@
     "286797": {
         "logo": "enet/5819.png",
         "name": "Iraq W"
+    },
+    "257843": {
+        "logo": "enet/6711.png",
+        "name": "Iran U17"
     }
 }
