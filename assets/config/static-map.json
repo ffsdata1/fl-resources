@@ -3002,5 +3002,21 @@
     "266453": {
         "logo": "enet/5792.png",
         "name": "Luxembourg U19"
+    },
+    "83734": {
+        "logo": "enet/5815.png",
+        "name": "Mali U23"
+    },
+    "174560": {
+        "logo": "enet/5815.png",
+        "name": "Mali W"
+    },
+    "272518": {
+        "logo": "enet/5815.png",
+        "name": "Mali U17"
+    },
+    "11768": {
+        "logo": "enet/5815.png",
+        "name": "Mali U20"
     }
 }
