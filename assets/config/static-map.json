@@ -760,8 +760,8 @@
         "name": "Venezuela U20"
     },
     "12596": {
-        "logo": "enet/5877.png",
-        "name": ""
+        "logo": "enet/6724.png",
+        "name": "Paraguay U20"
     },
     "12597": {
         "logo": "enet/5798.png",
@@ -2716,8 +2716,8 @@
         "name": "Liberia"
     },
     "9876": {
-        "logo": "enet/1078286.png",
-        "name": ""
+        "logo": "enet/6724.png",
+        "name": "Paraguay W"
     },
     "9891": {
         "logo": "enet/8497.png",
@@ -3166,5 +3166,13 @@
     "11810": {
         "logo": "enet/8492.png",
         "name": "Norway U20"
+    },
+    "82192": {
+        "logo": "enet/6724.png",
+        "name": "Paraguay U23"
+    },
+    "9676": {
+        "logo": "enet/6724.png",
+        "name": "Paraguay U17"
     }
 }
