@@ -752,8 +752,8 @@
         "name": "India U23"
     },
     "12585": {
-        "logo": "enet/5864.png",
-        "name": ""
+        "logo": "enet/8256.png",
+        "name": "Brazil U20"
     },
     "12586": {
         "logo": "enet/5800.png",
@@ -1304,8 +1304,8 @@
         "name": "China W"
     },
     "6348": {
-        "logo": "enet/5903.png",
-        "name": ""
+        "logo": "enet/8256.png",
+        "name": "Brazil W"
     },
     "6349": {
         "logo": "enet/6710.png",
@@ -2120,8 +2120,8 @@
         "name": "France U19"
     },
     "9173": {
-        "logo": "",
-        "name": ""
+        "logo": "enet/8256.png",
+        "name": "Brazil U17"
     },
     "9174": {
         "logo": "enet/7740.png",
@@ -3214,5 +3214,9 @@
     "191037": {
         "logo": "enet/262135.png",
         "name": "British Virgin Islands U20"
+    },
+    "203969": {
+        "logo": "enet/8256.png",
+        "name": "Aster Brazil U20"
     }
 }
