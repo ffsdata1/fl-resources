@@ -632,8 +632,8 @@
         "name": "Pakistan"
     },
     "11751": {
-        "logo": "enet/626318.png",
-        "name": ""
+        "logo": "enet/6395.png",
+        "name": "Senegal U20"
     },
     "11752": {
         "logo": "enet/6713.png",
@@ -1252,8 +1252,8 @@
         "name": "El Salvador"
     },
     "6074": {
-        "logo": "enet/1121168.png",
-        "name": ""
+        "logo": "enet/6395.png",
+        "name": "Senegal W"
     },
     "6186": {
         "logo": "enet/5884.png",
@@ -3114,5 +3114,9 @@
     "287402": {
         "logo": "enet/5803.png",
         "name": "Sierra Leone U20"
+    },
+    "9885": {
+        "logo": "enet/6395.png",
+        "name": "Senegal U17"
     }
 }
