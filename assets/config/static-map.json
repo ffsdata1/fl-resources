@@ -668,8 +668,8 @@
         "name": "New Zealand U20"
     },
     "11782": {
-        "logo": "enet/5862.png",
-        "name": ""
+        "logo": "enet/5922.png",
+        "name": "Panama U20"
     },
     "11800": {
         "logo": "enet/8361.png",
@@ -692,8 +692,8 @@
         "name": "Mexico U20"
     },
     "11952": {
-        "logo": "enet/967026.png",
-        "name": ""
+        "logo": "enet/5922.png",
+        "name": "Panama W"
     },
     "12413": {
         "logo": "enet/8520.png",
@@ -3174,5 +3174,9 @@
     "9676": {
         "logo": "enet/6724.png",
         "name": "Paraguay U17"
+    },
+    "246249": {
+        "logo": "enet/5922.png",
+        "name": "Panama U17"
     }
 }
