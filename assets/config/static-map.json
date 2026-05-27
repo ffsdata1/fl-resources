@@ -768,8 +768,8 @@
         "name": "Peru U20"
     },
     "12600": {
-        "logo": "enet/5949.png",
-        "name": ""
+        "logo": "enet/9762.png",
+        "name": "Chile U20"
     },
     "12602": {
         "logo": "enet/5797.png",
@@ -2604,8 +2604,8 @@
         "name": "Australia Women"
     },
     "9644": {
-        "logo": "enet/876803.png",
-        "name": ""
+        "logo": "enet/9762.png",
+        "name": "Chile W"
     },
     "9645": {
         "logo": "enet/5787.png",
@@ -3226,5 +3226,9 @@
     "12790": {
         "logo": "enet/287982.png",
         "name": "Cayman Islands U20"
+    },
+    "9878": {
+        "logo": "enet/9762.png",
+        "name": "Chile U17"
     }
 }
