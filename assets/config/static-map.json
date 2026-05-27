@@ -1060,8 +1060,8 @@
         "name": ""
     },
     "245144": {
-        "logo": "enet/67320.png",
-        "name": ""
+        "logo": "enet/6277.png",
+        "name": "Zambia U20"
     },
     "245146": {
         "logo": "enet/67317.png",
@@ -2878,5 +2878,9 @@
     "12587": {
         "logo": "enet/6714.png",
         "name": "Ghana U20"
+    },
+    "381356": {
+        "logo": "enet/6277.png",
+        "name": "Zambia"
     }
 }
