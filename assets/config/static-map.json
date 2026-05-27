@@ -28,8 +28,8 @@
         "name": "Luxembourg U17"
     },
     "10076": {
-        "logo": "enet/401899.png",
-        "name": ""
+        "logo": "enet/10259.png",
+        "name": "Northern Ireland U17"
     },
     "10077": {
         "logo": "enet/6035.png",
@@ -272,8 +272,8 @@
         "name": "Montenegro U17 W"
     },
     "10618": {
-        "logo": "enet/402134.png",
-        "name": ""
+        "logo": "enet/10259.png",
+        "name": "Northern Ireland U17 W"
     },
     "10754": {
         "logo": "enet/10045.png",
@@ -316,8 +316,8 @@
         "name": ""
     },
     "10766": {
-        "logo": "enet/400355.png",
-        "name": ""
+        "logo": "enet/10259.png",
+        "name": "Northern Ireland U19 W"
     },
     "10767": {
         "logo": "enet/8238.png",
@@ -1724,8 +1724,8 @@
         "name": "Montenegro U17"
     },
     "9048": {
-        "logo": "enet/8507.png",
-        "name": ""
+        "logo": "enet/10259.png",
+        "name": "Northern Ireland U21"
     },
     "9049": {
         "logo": "enet/9730.png",
@@ -2656,8 +2656,8 @@
         "name": ""
     },
     "9675": {
-        "logo": "enet/394248.png",
-        "name": ""
+        "logo": "enet/10259.png",
+        "name": "Northern Ireland W"
     },
     "9679": {
         "logo": "enet/8204.png",
@@ -3046,5 +3046,9 @@
     "272520": {
         "logo": "enet/6262.png",
         "name": "Morocco U17"
+    },
+    "99647": {
+        "logo": "enet/10259.png",
+        "name": "Northern Ireland U19"
     }
 }
