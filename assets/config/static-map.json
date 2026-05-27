@@ -1072,8 +1072,8 @@
         "name": "Egypt U20"
     },
     "245871": {
-        "logo": "enet/1431172.png",
-        "name": ""
+        "logo": "enet/5910.png",
+        "name": "Pakistan W"
     },
     "245872": {
         "logo": "enet/230692.png",
@@ -3178,5 +3178,9 @@
     "246249": {
         "logo": "enet/5922.png",
         "name": "Panama U17"
+    },
+    "12449": {
+        "logo": "enet/5910.png",
+        "name": "Pakistan U23"
     }
 }
