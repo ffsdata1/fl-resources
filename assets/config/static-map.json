@@ -976,8 +976,8 @@
         "name": ""
     },
     "192076": {
-        "logo": "enet/620742.png",
-        "name": ""
+        "logo": "enet/5789.png",
+        "name": "UAE W"
     },
     "194479": {
         "logo": "enet/654710.png",
@@ -1228,8 +1228,8 @@
         "name": "Vietnam U23"
     },
     "392": {
-        "logo": "enet/316113.png",
-        "name": ""
+        "logo": "enet/5789.png",
+        "name": "UAE U23"
     },
     "4012": {
         "logo": "enet/430156.png",
@@ -3094,5 +3094,9 @@
     "381485": {
         "logo": "enet/5890.png",
         "name": "Uganda"
+    },
+    "351874": {
+        "logo": "enet/5789.png",
+        "name": "UAE U17"
     }
 }
