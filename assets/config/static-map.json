@@ -80,8 +80,8 @@
         "name": "Czechia Women U17"
     },
     "10117": {
-        "logo": "enet/402137.png",
-        "name": ""
+        "logo": "enet/8492.png",
+        "name": "Norway U17 W"
     },
     "10118": {
         "logo": "enet/6718.png",
@@ -164,8 +164,8 @@
         "name": "Sweden U17"
     },
     "10154": {
-        "logo": "enet/401900.png",
-        "name": ""
+        "logo": "enet/8492.png",
+        "name": "Norway U17"
     },
     "10155": {
         "logo": "enet/6720.png",
@@ -180,8 +180,8 @@
         "name": "Scotland U19"
     },
     "10158": {
-        "logo": "enet/5964.png",
-        "name": ""
+        "logo": "enet/8492.png",
+        "name": "Norway U19"
     },
     "10159": {
         "logo": "enet/8496.png",
@@ -388,8 +388,8 @@
         "name": "Romania U19 W"
     },
     "10793": {
-        "logo": "enet/400360.png",
-        "name": ""
+        "logo": "enet/8492.png",
+        "name": "Norway U19 W"
     },
     "10794": {
         "logo": "enet/5791.png",
@@ -1592,8 +1592,8 @@
         "name": "Azerbaijan"
     },
     "9014": {
-        "logo": "enet/5830.png",
-        "name": ""
+        "logo": "enet/8492.png",
+        "name": "Norway U21"
     },
     "9015": {
         "logo": "enet/8557.png",
@@ -2316,8 +2316,8 @@
         "name": "Denmark Women"
     },
     "9248": {
-        "logo": "enet/5813.png",
-        "name": ""
+        "logo": "enet/8492.png",
+        "name": "Norway Women"
     },
     "9249": {
         "logo": "enet/835267.png",
@@ -3162,5 +3162,9 @@
     "146213": {
         "logo": "enet/8700.png",
         "name": "Uzbekistan U21"
+    },
+    "11810": {
+        "logo": "enet/8492.png",
+        "name": "Norway U20"
     }
 }
