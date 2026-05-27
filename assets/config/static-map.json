@@ -580,8 +580,8 @@
         "name": ""
     },
     "11289": {
-        "logo": "enet/1087289.png",
-        "name": ""
+        "logo": "enet/6327.png",
+        "name": "El Salvador W"
     },
     "11290": {
         "logo": "enet/734774.png",
@@ -856,8 +856,8 @@
         "name": ""
     },
     "14601": {
-        "logo": "enet/417517.png",
-        "name": ""
+        "logo": "enet/6327.png",
+        "name": "El Salvador U20"
     },
     "14602": {
         "logo": "enet/5869.png",
@@ -2866,5 +2866,9 @@
     "381354": {
         "logo": "enet/10255.png",
         "name": "Egypt"
+    },
+    "246266": {
+        "logo": "enet/6327.png",
+        "name": "El Salvador U17"
     }
 }
