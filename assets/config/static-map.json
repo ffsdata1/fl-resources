@@ -1356,8 +1356,8 @@
         "name": "Qatar"
     },
     "7751": {
-        "logo": "enet/625785.png",
-        "name": ""
+        "logo": "enet/5891.png",
+        "name": "Laos U23"
     },
     "7760": {
         "logo": "enet/5819.png",
@@ -1420,8 +1420,8 @@
         "name": ""
     },
     "83558": {
-        "logo": "enet/1463799.png",
-        "name": ""
+        "logo": "enet/5891.png",
+        "name": "Laos U22"
     },
     "83559": {
         "logo": "enet/620738.png",
@@ -2986,5 +2986,9 @@
     "291912": {
         "logo": "enet/4167.png",
         "name": "Lesotho W"
+    },
+    "272709": {
+        "logo": "enet/5891.png",
+        "name": "Laos"
     }
 }
