@@ -636,8 +636,8 @@
         "name": ""
     },
     "11752": {
-        "logo": "enet/5876.png",
-        "name": ""
+        "logo": "enet/6713.png",
+        "name": "USA U20"
     },
     "11767": {
         "logo": "enet/8258.png",
@@ -2640,8 +2640,8 @@
         "name": "Albania Women"
     },
     "9671": {
-        "logo": "enet/5909.png",
-        "name": ""
+        "logo": "enet/6713.png",
+        "name": "USA W"
     },
     "9672": {
         "logo": "enet/6705.png",
@@ -3066,5 +3066,17 @@
     "249256": {
         "logo": "enet/5800.png",
         "name": "Venezuela U17"
+    },
+    "83732": {
+        "logo": "enet/6713.png",
+        "name": "USA U23"
+    },
+    "9949": {
+        "logo": "enet/6713.png",
+        "name": "USA U17"
+    },
+    "396959": {
+        "logo": "enet/6713.png",
+        "name": "USA U21"
     }
 }
