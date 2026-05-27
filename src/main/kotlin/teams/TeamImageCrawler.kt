@@ -24,6 +24,7 @@ object TeamImageCrawler {
     private val json = Json {
         ignoreUnknownKeys = true
         prettyPrint = true
+        encodeDefaults = true
     }
 
     val staticImageTeams = mutableMapOf<String, StaticTeamInfo>()
@@ -252,6 +253,50 @@ object TeamImageCrawler {
             }
         }
         println("Optimization finished. Processed $totalFiles images. Optimized $optimizedFiles images that exceeded 20KB.")
+    }
+
+    fun mapTeamNamesToStaticMap(competitionId: String, stageRegion: String, stageId: String) {
+        val competitionTeams = TeamExtractor.fetchTeamsFromCompetition(competitionId)
+        val stageTeams = TeamExtractor.fetchTeamsFromStage(stageRegion, stageId)
+        val allTeams = (competitionTeams + stageTeams).distinctBy { it.ID }
+
+        if (allTeams.isEmpty()) {
+            println("No teams fetched from competition ($competitionId) or stage ($stageRegion/$stageId).")
+            return
+        }
+
+        val file = File("assets/config/static-map.json")
+        val currentMap = if (file.exists()) {
+            try {
+                json.decodeFromString<Map<String, StaticTeamInfo>>(file.readText()).toMutableMap()
+            } catch (e: Exception) {
+                println("Error parsing static-map.json: ${e.message}. Starting with empty map.")
+                mutableMapOf()
+            }
+        } else {
+            mutableMapOf()
+        }
+
+        var updatedCount = 0
+        for (team in allTeams) {
+            val existingInfo = currentMap[team.ID]
+            if (existingInfo != null) {
+                val newName = team.Nm.trim()
+                val newLogo = if (existingInfo.logo.isBlank() && !team.Img.isNullOrBlank()) team.Img else existingInfo.logo
+                
+                if (existingInfo.name != newName || existingInfo.logo != newLogo) {
+                    currentMap[team.ID] = StaticTeamInfo(logo = newLogo, name = newName)
+                    updatedCount++
+                }
+            }
+        }
+
+        if (updatedCount > 0) {
+            file.writeText(json.encodeToString(currentMap))
+            println("Successfully updated static-map.json. Updated: $updatedCount teams.")
+        } else {
+            println("No new updates for static-map.json.")
+        }
     }
 
     private fun saveTeamSquad() {

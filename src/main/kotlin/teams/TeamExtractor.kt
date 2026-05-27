@@ -88,6 +88,40 @@ object TeamExtractor {
         }
     }
 
+    fun fetchTeamsFromCompetition(id: String): List<Team> {
+        try {
+            val baseUrl = getEnv(Constant.ENV_FOOTBALL_LIVE_API) ?: error("FOOTBALL_LIVE_API not configured in env")
+            val url = "$baseUrl/competition/$id/details/0.00?MD=0"
+            val body = fetchJsonFromUrl(url)
+            val data = json.decodeFromString<Root>(body)
+            return data.Stages.flatMap { stage ->
+                stage.Events.flatMap { event ->
+                    event.T1 + event.T2
+                }
+            }
+        } catch (e: Throwable) {
+            println("Error fetching competition teams (id: $id): ${e.message}")
+            return emptyList()
+        }
+    }
+
+    fun fetchTeamsFromStage(region: String, id: String): List<Team> {
+        try {
+            val baseUrl = getEnv(Constant.ENV_FOOTBALL_LIVE_API) ?: error("FOOTBALL_LIVE_API not configured in env")
+            val url = "$baseUrl/stage/soccer/$region/$id/0?MD=0"
+            val body = fetchJsonFromUrl(url)
+            val data = json.decodeFromString<Root>(body)
+            return data.Stages.flatMap { stage ->
+                stage.Events.flatMap { event ->
+                    event.T1 + event.T2
+                }
+            }
+        } catch (e: Throwable) {
+            println("Error fetching stage teams (region: $region, id: $id): ${e.message}")
+            return emptyList()
+        }
+    }
+
     private fun fetchJsonFromUrl(url: String): String {
         val request = Request.Builder().url(url).build()
         client.newCall(request).execute().let { response ->
@@ -96,6 +130,5 @@ object TeamExtractor {
             }
             return response.body?.string() ?: throw Exception("Empty response body")
         }
-        throw Exception("Failed to fetch data from $url")
     }
 }
