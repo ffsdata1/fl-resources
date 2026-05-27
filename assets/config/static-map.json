@@ -600,8 +600,8 @@
         "name": "Jamaica W"
     },
     "11706": {
-        "logo": "enet/5879.png",
-        "name": ""
+        "logo": "enet/7804.png",
+        "name": "South Korea U20"
     },
     "11715": {
         "logo": "enet/8204.png",
@@ -1192,8 +1192,8 @@
         "name": "Moldova"
     },
     "3417": {
-        "logo": "enet/300702.png",
-        "name": ""
+        "logo": "enet/7804.png",
+        "name": "South Korea U23"
     },
     "3418": {
         "logo": "enet/5822.png",
@@ -1284,8 +1284,8 @@
         "name": "Japan"
     },
     "6338": {
-        "logo": "enet/244164.png",
-        "name": ""
+        "logo": "enet/7804.png",
+        "name": "South Korea W"
     },
     "6339": {
         "logo": "enet/6715.png",
@@ -3126,5 +3126,9 @@
     "323514": {
         "logo": "enet/408231.png",
         "name": "South Sudan W"
+    },
+    "9678": {
+        "logo": "enet/7804.png",
+        "name": "South Korea U17"
     }
 }
