@@ -896,8 +896,8 @@
         "name": "Slovakia U20"
     },
     "154181": {
-        "logo": "enet/1243552.png",
-        "name": ""
+        "logo": "enet/8700.png",
+        "name": "Uzbekistan W"
     },
     "155041": {
         "logo": "enet/5816.png",
@@ -1040,8 +1040,8 @@
         "name": ""
     },
     "233453": {
-        "logo": "enet/5863.png",
-        "name": ""
+        "logo": "enet/8700.png",
+        "name": "Uzbekistan U20"
     },
     "233519": {
         "logo": "enet/5820.png",
@@ -1200,8 +1200,8 @@
         "name": "China U23"
     },
     "3474": {
-        "logo": "enet/613636.png",
-        "name": ""
+        "logo": "enet/8700.png",
+        "name": "Uzbekistan U23"
     },
     "3475": {
         "logo": "enet/6711.png",
@@ -3154,5 +3154,13 @@
     "231558": {
         "logo": "enet/6320.png",
         "name": "Syria W"
+    },
+    "257946": {
+        "logo": "enet/8700.png",
+        "name": "Uzbekistan U17"
+    },
+    "146213": {
+        "logo": "enet/8700.png",
+        "name": "Uzbekistan U21"
     }
 }
