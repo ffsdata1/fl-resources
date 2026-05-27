@@ -1168,8 +1168,8 @@
         "name": ""
     },
     "2801": {
-        "logo": "enet/623768.png",
-        "name": ""
+        "logo": "enet/5788.png",
+        "name": "Thailand U23"
     },
     "300": {
         "logo": "enet/5816.png",
@@ -1424,8 +1424,8 @@
         "name": "Laos U22"
     },
     "83559": {
-        "logo": "enet/620738.png",
-        "name": ""
+        "logo": "enet/5788.png",
+        "name": "Thailand U22"
     },
     "83569": {
         "logo": "enet/1463791.png",
@@ -2472,8 +2472,8 @@
         "name": "Martinique"
     },
     "9513": {
-        "logo": "enet/604110.png",
-        "name": ""
+        "logo": "enet/5788.png",
+        "name": "Thailand W"
     },
     "9514": {
         "logo": "enet/8205.png",
@@ -3138,5 +3138,9 @@
     "11799": {
         "logo": "enet/6316.png",
         "name": "South Africa U20"
+    },
+    "345803": {
+        "logo": "enet/5788.png",
+        "name": "Thailand U20"
     }
 }
