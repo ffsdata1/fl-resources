@@ -640,8 +640,8 @@
         "name": ""
     },
     "11767": {
-        "logo": "enet/5873.png",
-        "name": ""
+        "logo": "enet/8258.png",
+        "name": "Colombia U20"
     },
     "11775": {
         "logo": "enet/5860.png",
@@ -1124,8 +1124,8 @@
         "name": ""
     },
     "251066": {
-        "logo": "enet/1454685.png",
-        "name": ""
+        "logo": "enet/8258.png",
+        "name": "Colombia U21"
     },
     "252435": {
         "logo": "enet/941637.png",
@@ -2616,8 +2616,8 @@
         "name": ""
     },
     "9647": {
-        "logo": "enet/239729.png",
-        "name": ""
+        "logo": "enet/8258.png",
+        "name": "Colombia W"
     },
     "9648": {
         "logo": "enet/6585.png",
@@ -2918,5 +2918,9 @@
     "246265": {
         "logo": "enet/6705.png",
         "name": "Costa Rica U17"
+    },
+    "249254": {
+        "logo": "enet/8258.png",
+        "name": "Colombia U17"
     }
 }
