@@ -924,8 +924,8 @@
         "name": ""
     },
     "159394": {
-        "logo": "enet/307603.png",
-        "name": ""
+        "logo": "enet/10255.png",
+        "name": "Egypt U23"
     },
     "159395": {
         "logo": "enet/307602.png",
@@ -1000,8 +1000,8 @@
         "name": ""
     },
     "213603": {
-        "logo": "enet/1353680.png",
-        "name": ""
+        "logo": "enet/10255.png",
+        "name": "Egypt W"
     },
     "216325": {
         "logo": "enet/1359112.png",
@@ -1068,8 +1068,8 @@
         "name": ""
     },
     "245147": {
-        "logo": "enet/5872.png",
-        "name": ""
+        "logo": "enet/10255.png",
+        "name": "Egypt U20"
     },
     "245871": {
         "logo": "enet/1431172.png",
@@ -2862,5 +2862,9 @@
     "9872": {
         "logo": "enet/6707.png",
         "name": "Ecuador U17"
+    },
+    "381354": {
+        "logo": "enet/10255.png",
+        "name": "Egypt"
     }
 }
