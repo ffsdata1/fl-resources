@@ -684,8 +684,8 @@
         "name": ""
     },
     "11811": {
-        "logo": "enet/5950.png",
-        "name": ""
+        "logo": "enet/5808.png",
+        "name": "Honduras U20"
     },
     "11827": {
         "logo": "enet/5880.png",
@@ -1084,8 +1084,8 @@
         "name": "Saudi Arabia W"
     },
     "246270": {
-        "logo": "",
-        "name": ""
+        "logo": "enet/5808.png",
+        "name": "Honduras U17"
     },
     "247243": {
         "logo": "enet/831860.png",
@@ -2946,5 +2946,9 @@
     "14594": {
         "logo": "enet/5934.png",
         "name": "Haiti U20"
+    },
+    "198849": {
+        "logo": "enet/5808.png",
+        "name": "Honduras Women"
     }
 }
