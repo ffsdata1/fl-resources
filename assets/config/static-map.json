@@ -124,8 +124,8 @@
         "name": ""
     },
     "10139": {
-        "logo": "enet/402122.png",
-        "name": ""
+        "logo": "enet/8567.png",
+        "name": "Israel U17 W"
     },
     "10145": {
         "logo": "enet/10155.png",
@@ -356,8 +356,8 @@
         "name": "Romania U19"
     },
     "10784": {
-        "logo": "enet/387997.png",
-        "name": ""
+        "logo": "enet/8567.png",
+        "name": "Israel U19"
     },
     "10785": {
         "logo": "enet/364183.png",
@@ -1140,8 +1140,8 @@
         "name": ""
     },
     "254616": {
-        "logo": "enet/1466505.png",
-        "name": ""
+        "logo": "enet/8567.png",
+        "name": "Israel U20"
     },
     "260032": {
         "logo": "enet/316155.png",
@@ -1692,8 +1692,8 @@
         "name": "Faroe Islands"
     },
     "9040": {
-        "logo": "enet/5828.png",
-        "name": ""
+        "logo": "enet/8567.png",
+        "name": "Israel U21"
     },
     "9041": {
         "logo": "enet/8505.png",
@@ -2272,8 +2272,8 @@
         "name": "Gambia"
     },
     "9232": {
-        "logo": "enet/5942.png",
-        "name": ""
+        "logo": "enet/8567.png",
+        "name": "Israel U17"
     },
     "9233": {
         "logo": "enet/120233.png",
@@ -2444,8 +2444,8 @@
         "name": ""
     },
     "9375": {
-        "logo": "enet/394243.png",
-        "name": ""
+        "logo": "enet/8567.png",
+        "name": "Israel W"
     },
     "9409": {
         "logo": "enet/5842.png",
@@ -2950,5 +2950,9 @@
     "198849": {
         "logo": "enet/5808.png",
         "name": "Honduras Women"
+    },
+    "290264": {
+        "logo": "enet/8567.png",
+        "name": "Israel U23"
     }
 }
