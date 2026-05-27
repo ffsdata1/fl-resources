@@ -652,8 +652,8 @@
         "name": "France U20"
     },
     "11778": {
-        "logo": "enet/5875.png",
-        "name": ""
+        "logo": "enet/6715.png",
+        "name": "Japan U20"
     },
     "11779": {
         "logo": "enet/5954.png",
@@ -1048,8 +1048,8 @@
         "name": ""
     },
     "234301": {
-        "logo": "enet/5915.png",
-        "name": ""
+        "logo": "enet/6715.png",
+        "name": "Japan U21"
     },
     "235192": {
         "logo": "enet/5868.png",
@@ -1208,8 +1208,8 @@
         "name": "Iran U23"
     },
     "3537": {
-        "logo": "enet/298067.png",
-        "name": ""
+        "logo": "enet/6715.png",
+        "name": "Japan U23"
     },
     "3538": {
         "logo": "enet/7795.png",
@@ -1288,8 +1288,8 @@
         "name": ""
     },
     "6339": {
-        "logo": "enet/5906.png",
-        "name": ""
+        "logo": "enet/6715.png",
+        "name": "Japan W"
     },
     "6340": {
         "logo": "enet/6322.png",
@@ -2966,5 +2966,9 @@
     "272519": {
         "logo": "enet/6324.png",
         "name": "Indonesia U17"
+    },
+    "9886": {
+        "logo": "enet/6715.png",
+        "name": "Japan U17"
     }
 }
