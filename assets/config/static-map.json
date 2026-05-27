@@ -24,8 +24,8 @@
         "name": ""
     },
     "10075": {
-        "logo": "enet/6588.png",
-        "name": ""
+        "logo": "enet/5792.png",
+        "name": "Luxembourg U17"
     },
     "10076": {
         "logo": "enet/401899.png",
@@ -92,8 +92,8 @@
         "name": ""
     },
     "101318": {
-        "logo": "enet/394246.png",
-        "name": ""
+        "logo": "enet/5792.png",
+        "name": "Luxembourg W"
     },
     "101319": {
         "logo": "enet/394234.png",
@@ -224,8 +224,8 @@
         "name": ""
     },
     "10304": {
-        "logo": "enet/5832.png",
-        "name": ""
+        "logo": "enet/5792.png",
+        "name": "Luxembourg U21"
     },
     "10307": {
         "logo": "enet/8269.png",
@@ -952,8 +952,8 @@
         "name": ""
     },
     "161713": {
-        "logo": "enet/1238756.png",
-        "name": ""
+        "logo": "enet/5792.png",
+        "name": "Luxembourg U17 W"
     },
     "161714": {
         "logo": "enet/5799.png",
@@ -2072,8 +2072,8 @@
         "name": "Guyana"
     },
     "9156": {
-        "logo": "enet/401890.png",
-        "name": ""
+        "logo": "enet/5792.png",
+        "name": "Luxembourg U19"
     },
     "9157": {
         "logo": "enet/401897.png",
@@ -2998,5 +2998,9 @@
     "359196": {
         "logo": "enet/5884.png",
         "name": "Kenya U20"
+    },
+    "266453": {
+        "logo": "enet/5792.png",
+        "name": "Luxembourg U19"
     }
 }
