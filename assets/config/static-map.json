@@ -480,8 +480,8 @@
         "name": ""
     },
     "10923": {
-        "logo": "enet/400829.png",
-        "name": ""
+        "logo": "enet/5793.png",
+        "name": "Cyprus Women U19"
     },
     "10924": {
         "logo": "enet/400351.png",
@@ -1852,8 +1852,8 @@
         "name": ""
     },
     "9091": {
-        "logo": "enet/401877.png",
-        "name": ""
+        "logo": "enet/5793.png",
+        "name": "Cyprus U19"
     },
     "9093": {
         "logo": "enet/401893.png",
@@ -2496,8 +2496,8 @@
         "name": ""
     },
     "9538": {
-        "logo": "enet/5826.png",
-        "name": ""
+        "logo": "enet/5793.png",
+        "name": "Cyprus U21"
     },
     "9539": {
         "logo": "enet/394241.png",
@@ -2632,8 +2632,8 @@
         "name": ""
     },
     "9663": {
-        "logo": "enet/601750.png",
-        "name": ""
+        "logo": "enet/5793.png",
+        "name": "Cyprus Women"
     },
     "9664": {
         "logo": "enet/10024.png",
@@ -2902,5 +2902,9 @@
     "363326": {
         "logo": "enet/8238.png",
         "name": "Denmark U20"
+    },
+    "10134": {
+        "logo": "enet/5793.png",
+        "name": "Cyprus U17"
     }
 }
