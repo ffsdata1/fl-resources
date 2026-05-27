@@ -1056,8 +1056,8 @@
         "name": ""
     },
     "241694": {
-        "logo": "enet/1446190.png",
-        "name": ""
+        "logo": "enet/6324.png",
+        "name": "Indonesia U20"
     },
     "245144": {
         "logo": "enet/6277.png",
@@ -1340,8 +1340,8 @@
         "name": ""
     },
     "7156": {
-        "logo": "enet/558881.png",
-        "name": ""
+        "logo": "enet/6324.png",
+        "name": "Indonesia U23"
     },
     "7219": {
         "logo": "enet/5901.png",
@@ -1400,8 +1400,8 @@
         "name": ""
     },
     "83509": {
-        "logo": "enet/1463793.png",
-        "name": ""
+        "logo": "enet/6324.png",
+        "name": "Indonesia U22"
     },
     "83510": {
         "logo": "enet/5894.png",
@@ -1436,8 +1436,8 @@
         "name": ""
     },
     "83582": {
-        "logo": "enet/633424.png",
-        "name": ""
+        "logo": "enet/6324.png",
+        "name": "Indonesia Women"
     },
     "8530": {
         "logo": "enet/10057.png",
@@ -2962,5 +2962,9 @@
     "257843": {
         "logo": "enet/6711.png",
         "name": "Iran U17"
+    },
+    "272519": {
+        "logo": "enet/6324.png",
+        "name": "Indonesia U17"
     }
 }
