@@ -168,8 +168,8 @@
         "name": ""
     },
     "10155": {
-        "logo": "enet/5932.png",
-        "name": ""
+        "logo": "enet/6720.png",
+        "name": "Spain U19"
     },
     "10156": {
         "logo": "enet/8238.png",
@@ -396,8 +396,8 @@
         "name": "Ireland Women U19"
     },
     "10795": {
-        "logo": "enet/402148.png",
-        "name": ""
+        "logo": "enet/6720.png",
+        "name": "Spain U19 W"
     },
     "10796": {
         "logo": "enet/402150.png",
@@ -928,8 +928,8 @@
         "name": "Egypt U23"
     },
     "159395": {
-        "logo": "enet/307602.png",
-        "name": ""
+        "logo": "enet/6720.png",
+        "name": "Spain U23"
     },
     "159396": {
         "logo": "enet/316153.png",
@@ -1696,8 +1696,8 @@
         "name": "Israel U21"
     },
     "9041": {
-        "logo": "enet/8505.png",
-        "name": ""
+        "logo": "enet/6720.png",
+        "name": "Spain U21"
     },
     "9042": {
         "logo": "enet/8261.png",
@@ -2620,8 +2620,8 @@
         "name": "Colombia W"
     },
     "9648": {
-        "logo": "enet/6585.png",
-        "name": ""
+        "logo": "enet/6720.png",
+        "name": "Spain U17"
     },
     "9650": {
         "logo": "enet/6595.png",
@@ -2648,8 +2648,8 @@
         "name": "Costa Rica W"
     },
     "9673": {
-        "logo": "enet/244165.png",
-        "name": ""
+        "logo": "enet/6720.png",
+        "name": "Spain Women"
     },
     "9674": {
         "logo": "enet/622502.png",
@@ -2756,8 +2756,8 @@
         "name": ""
     },
     "9957": {
-        "logo": "enet/402147.png",
-        "name": ""
+        "logo": "enet/6720.png",
+        "name": "Spain U17 W"
     },
     "9958": {
         "logo": "enet/6595.png",
@@ -3118,5 +3118,9 @@
     "9885": {
         "logo": "enet/6395.png",
         "name": "Senegal U17"
+    },
+    "365122": {
+        "logo": "enet/6720.png",
+        "name": "Spain U20"
     }
 }
