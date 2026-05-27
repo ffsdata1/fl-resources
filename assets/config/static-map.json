@@ -60,8 +60,8 @@
         "name": ""
     },
     "10108": {
-        "logo": "enet/395311.png",
-        "name": ""
+        "logo": "enet/8238.png",
+        "name": "Denmark U17 W"
     },
     "10113": {
         "logo": "enet/395312.png",
@@ -172,8 +172,8 @@
         "name": ""
     },
     "10156": {
-        "logo": "enet/260901.png",
-        "name": ""
+        "logo": "enet/8238.png",
+        "name": "Denmark U17"
     },
     "10157": {
         "logo": "enet/8498.png",
@@ -320,8 +320,8 @@
         "name": ""
     },
     "10767": {
-        "logo": "enet/402105.png",
-        "name": ""
+        "logo": "enet/8238.png",
+        "name": "Denmark Women U19"
     },
     "10770": {
         "logo": "enet/8204.png",
@@ -2088,8 +2088,8 @@
         "name": "Austria"
     },
     "9162": {
-        "logo": "enet/8494.png",
-        "name": ""
+        "logo": "enet/8238.png",
+        "name": "Denmark U21"
     },
     "9163": {
         "logo": "enet/5829.png",
@@ -2112,8 +2112,8 @@
         "name": "Suriname"
     },
     "9170": {
-        "logo": "enet/401878.png",
-        "name": ""
+        "logo": "enet/8238.png",
+        "name": "Denmark U19"
     },
     "9171": {
         "logo": "enet/6723.png",
@@ -2312,8 +2312,8 @@
         "name": "Ukraine"
     },
     "9247": {
-        "logo": "enet/5818.png",
-        "name": ""
+        "logo": "enet/8238.png",
+        "name": "Denmark Women"
     },
     "9248": {
         "logo": "enet/5813.png",
@@ -2898,5 +2898,9 @@
     "257851": {
         "logo": "enet/7795.png",
         "name": "Saudi Arabia U17"
+    },
+    "363326": {
+        "logo": "enet/8238.png",
+        "name": "Denmark U20"
     }
 }
