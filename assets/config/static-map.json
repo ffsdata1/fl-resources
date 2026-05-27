@@ -680,8 +680,8 @@
         "name": "Saudi Arabia U20"
     },
     "11808": {
-        "logo": "enet/169345.png",
-        "name": ""
+        "logo": "enet/5902.png",
+        "name": "Qatar U20"
     },
     "11811": {
         "logo": "enet/5808.png",
@@ -1216,8 +1216,8 @@
         "name": "Saudi Arabia U23"
     },
     "3552": {
-        "logo": "enet/304032.png",
-        "name": ""
+        "logo": "enet/5902.png",
+        "name": "Qatar U23"
     },
     "3553": {
         "logo": "enet/6320.png",
@@ -3182,5 +3182,13 @@
     "12449": {
         "logo": "enet/5910.png",
         "name": "Pakistan U23"
+    },
+    "364480": {
+        "logo": "enet/5902.png",
+        "name": "Qatar U17"
+    },
+    "12441": {
+        "logo": "enet/5902.png",
+        "name": "Qatar U21"
     }
 }
