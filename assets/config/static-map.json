@@ -308,8 +308,8 @@
         "name": ""
     },
     "10763": {
-        "logo": "enet/399573.png",
-        "name": ""
+        "logo": "enet/5799.png",
+        "name": "Liechtenstein U17"
     },
     "10764": {
         "logo": "enet/395316.png",
@@ -908,8 +908,8 @@
         "name": ""
     },
     "156194": {
-        "logo": "enet/1245674.png",
-        "name": ""
+        "logo": "enet/5799.png",
+        "name": "Liechtenstein W"
     },
     "159391": {
         "logo": "enet/6723.png",
@@ -956,8 +956,8 @@
         "name": ""
     },
     "161714": {
-        "logo": "enet/903623.png",
-        "name": ""
+        "logo": "enet/5799.png",
+        "name": "Liechtenstein U19 W"
     },
     "166717": {
         "logo": "enet/5822.png",
@@ -2978,5 +2978,9 @@
     "325445": {
         "logo": "enet/6709.png",
         "name": "Ivory Coast U20"
+    },
+    "264452": {
+        "logo": "enet/5799.png",
+        "name": "Liechtenstein U19"
     }
 }
