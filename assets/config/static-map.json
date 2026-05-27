@@ -2680,8 +2680,8 @@
         "name": ""
     },
     "9702": {
-        "logo": "enet/316118.png",
-        "name": ""
+        "logo": "enet/6316.png",
+        "name": "South Africa W"
     },
     "9815": {
         "logo": "enet/10155.png",
@@ -3130,5 +3130,13 @@
     "9678": {
         "logo": "enet/7804.png",
         "name": "South Korea U17"
+    },
+    "364479": {
+        "logo": "enet/6316.png",
+        "name": "South Africa U17"
+    },
+    "11799": {
+        "logo": "enet/6316.png",
+        "name": "South Africa U20"
     }
 }
