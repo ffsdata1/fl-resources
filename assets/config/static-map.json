@@ -1136,8 +1136,8 @@
         "name": ""
     },
     "252852": {
-        "logo": "",
-        "name": ""
+        "logo": "enet/7941.png",
+        "name": "Tanzania W"
     },
     "254616": {
         "logo": "enet/8567.png",
@@ -3142,5 +3142,9 @@
     "345803": {
         "logo": "enet/5788.png",
         "name": "Thailand U20"
+    },
+    "135425": {
+        "logo": "enet/7941.png",
+        "name": "Tanzania U20"
     }
 }
