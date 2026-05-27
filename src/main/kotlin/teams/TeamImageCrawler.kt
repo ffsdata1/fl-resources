@@ -15,6 +15,15 @@ data class StaticTeamInfo(
     val name: String = ""
 )
 
+@Serializable
+data class StageSource(val region: String, val id: String)
+
+@Serializable
+data class TeamSource(
+    val competitions: List<String> = emptyList(),
+    val stages: List<StageSource> = emptyList()
+)
+
 object TeamImageCrawler {
     private const val teamImagePath = "assets/image/teams/"
     private const val teamStaticImagePath = "assets/static/teams/"
@@ -255,13 +264,33 @@ object TeamImageCrawler {
         println("Optimization finished. Processed $totalFiles images. Optimized $optimizedFiles images that exceeded 20KB.")
     }
 
-    fun mapTeamNamesToStaticMap(competitionId: String, stageRegion: String, stageId: String) {
-        val competitionTeams = TeamExtractor.fetchTeamsFromCompetition(competitionId)
-        val stageTeams = TeamExtractor.fetchTeamsFromStage(stageRegion, stageId)
-        val allTeams = (competitionTeams + stageTeams).distinctBy { it.ID }
+    fun mapTeamNamesToStaticMap() {
+        val sourceFile = File("assets/config/team_source.json")
+        if (!sourceFile.exists()) {
+            println("team_source.json does not exist.")
+            return
+        }
 
-        if (allTeams.isEmpty()) {
-            println("No teams fetched from competition ($competitionId) or stage ($stageRegion/$stageId).")
+        val teamSource = try {
+            json.decodeFromString<TeamSource>(sourceFile.readText())
+        } catch (e: Exception) {
+            println("Error parsing team_source.json: ${e.message}")
+            return
+        }
+
+        val allTeams = mutableListOf<Team>()
+
+        for (compId in teamSource.competitions) {
+            allTeams.addAll(TeamExtractor.fetchTeamsFromCompetition(compId))
+        }
+
+        for (stage in teamSource.stages) {
+            allTeams.addAll(TeamExtractor.fetchTeamsFromStage(stage.region, stage.id))
+        }
+
+        val distinctTeams = allTeams.distinctBy { it.ID }
+        if (distinctTeams.isEmpty()) {
+            println("No teams fetched from team_source.json configs.")
             return
         }
 
@@ -278,7 +307,7 @@ object TeamImageCrawler {
         }
 
         var updatedCount = 0
-        for (team in allTeams) {
+        for (team in distinctTeams) {
             val existingInfo = currentMap[team.ID]
             if (existingInfo != null) {
                 val newName = team.Nm.trim()
