@@ -1092,8 +1092,8 @@
         "name": ""
     },
     "247244": {
-        "logo": "enet/1446192.png",
-        "name": ""
+        "logo": "enet/5819.png",
+        "name": "Iraq U20"
     },
     "247257": {
         "logo": "enet/831861.png",
@@ -1240,8 +1240,8 @@
         "name": ""
     },
     "426": {
-        "logo": "enet/318825.png",
-        "name": ""
+        "logo": "enet/5819.png",
+        "name": "Iraq U23"
     },
     "4505": {
         "logo": "enet/8536.png",
@@ -2954,5 +2954,9 @@
     "290264": {
         "logo": "enet/8567.png",
         "name": "Israel U23"
+    },
+    "286797": {
+        "logo": "enet/5819.png",
+        "name": "Iraq W"
     }
 }
