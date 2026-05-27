@@ -1016,8 +1016,8 @@
         "name": ""
     },
     "222880": {
-        "logo": "enet/604108.png",
-        "name": ""
+        "logo": "enet/6709.png",
+        "name": "Ivory Coast Women"
     },
     "222883": {
         "logo": "",
@@ -2970,5 +2970,13 @@
     "9886": {
         "logo": "enet/6715.png",
         "name": "Japan U17"
+    },
+    "381355": {
+        "logo": "enet/6709.png",
+        "name": "Ivory Coast"
+    },
+    "325445": {
+        "logo": "enet/6709.png",
+        "name": "Ivory Coast U20"
     }
 }
