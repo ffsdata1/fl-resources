@@ -772,8 +772,8 @@
         "name": ""
     },
     "12602": {
-        "logo": "enet/978907.png",
-        "name": ""
+        "logo": "enet/5797.png",
+        "name": "Bolivia U20"
     },
     "12655": {
         "logo": "enet/1129658.png",
@@ -824,8 +824,8 @@
         "name": "India W"
     },
     "141402": {
-        "logo": "enet/1232235.png",
-        "name": ""
+        "logo": "enet/5797.png",
+        "name": "Bolivia W"
     },
     "141860": {
         "logo": "enet/5756.png",
@@ -3214,5 +3214,9 @@
     "191037": {
         "logo": "enet/262135.png",
         "name": "British Virgin Islands U20"
+    },
+    "249290": {
+        "logo": "enet/5797.png",
+        "name": "Bolivia U17"
     }
 }
