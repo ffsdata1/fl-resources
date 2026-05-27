@@ -1100,8 +1100,8 @@
         "name": ""
     },
     "247258": {
-        "logo": "enet/5953.png",
-        "name": ""
+        "logo": "enet/6320.png",
+        "name": "Syria U20"
     },
     "247291": {
         "logo": "enet/1446193.png",
@@ -1220,8 +1220,8 @@
         "name": ""
     },
     "3553": {
-        "logo": "enet/622102.png",
-        "name": ""
+        "logo": "enet/6320.png",
+        "name": "Syria U23"
     },
     "391": {
         "logo": "enet/5894.png",
@@ -3150,5 +3150,9 @@
     "9905": {
         "logo": "enet/5898.png",
         "name": "Tajikistan U17"
+    },
+    "231558": {
+        "logo": "enet/6320.png",
+        "name": "Syria W"
     }
 }
