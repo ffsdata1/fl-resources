@@ -32,8 +32,8 @@
         "name": ""
     },
     "10077": {
-        "logo": "enet/401895.png",
-        "name": ""
+        "logo": "enet/6035.png",
+        "name": "San Marino U17"
     },
     "10078": {
         "logo": "enet/9730.png",
@@ -300,8 +300,8 @@
         "name": ""
     },
     "10761": {
-        "logo": "enet/401894.png",
-        "name": ""
+        "logo": "enet/6035.png",
+        "name": "San Marino U19"
     },
     "10762": {
         "logo": "enet/364182.png",
@@ -2540,8 +2540,8 @@
         "name": "Finland U21"
     },
     "9586": {
-        "logo": "enet/5840.png",
-        "name": ""
+        "logo": "enet/6035.png",
+        "name": "San Marino U21"
     },
     "9587": {
         "logo": "enet/5841.png",
@@ -2890,5 +2890,9 @@
     "12783": {
         "logo": "enet/5923.png",
         "name": "Saint Vincent and The Grenadines U20"
+    },
+    "379208": {
+        "logo": "enet/6035.png",
+        "name": "San Marino U19"
     }
 }
