@@ -780,8 +780,8 @@
         "name": ""
     },
     "12656": {
-        "logo": "enet/1129300.png",
-        "name": ""
+        "logo": "enet/6262.png",
+        "name": "Morocco Women"
     },
     "12657": {
         "logo": "enet/1129301.png",
@@ -804,8 +804,8 @@
         "name": ""
     },
     "135424": {
-        "logo": "enet/5951.png",
-        "name": ""
+        "logo": "enet/6262.png",
+        "name": "Morocco U20"
     },
     "135426": {
         "logo": "enet/1227669.png",
@@ -1144,8 +1144,8 @@
         "name": "Israel U20"
     },
     "260032": {
-        "logo": "enet/316155.png",
-        "name": ""
+        "logo": "enet/6262.png",
+        "name": "Morocco U23"
     },
     "260786": {
         "logo": "enet/1496534.png",
@@ -3042,5 +3042,9 @@
     "155164": {
         "logo": "enet/5802.png",
         "name": "Namibia Women"
+    },
+    "272520": {
+        "logo": "enet/6262.png",
+        "name": "Morocco U17"
     }
 }
