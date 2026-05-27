@@ -868,8 +868,8 @@
         "name": "Guatemala U20"
     },
     "14604": {
-        "logo": "enet/608072.png",
-        "name": ""
+        "logo": "enet/262131.png",
+        "name": "Aruba U20"
     },
     "147805": {
         "logo": "enet/1237411.png",
@@ -3190,5 +3190,9 @@
     "12441": {
         "logo": "enet/5902.png",
         "name": "Qatar U21"
+    },
+    "323513": {
+        "logo": "enet/262131.png",
+        "name": "Aruba"
     }
 }
