@@ -676,8 +676,8 @@
         "name": ""
     },
     "11807": {
-        "logo": "enet/7741.png",
-        "name": ""
+        "logo": "enet/7795.png",
+        "name": "Saudi Arabia U20"
     },
     "11808": {
         "logo": "enet/169345.png",
@@ -1080,8 +1080,8 @@
         "name": ""
     },
     "245873": {
-        "logo": "enet/1431174.png",
-        "name": ""
+        "logo": "enet/7795.png",
+        "name": "Saudi Arabia W"
     },
     "246270": {
         "logo": "",
@@ -1212,8 +1212,8 @@
         "name": ""
     },
     "3538": {
-        "logo": "enet/610874.png",
-        "name": ""
+        "logo": "enet/7795.png",
+        "name": "Saudi Arabia U23"
     },
     "3552": {
         "logo": "enet/304032.png",
@@ -2894,5 +2894,9 @@
     "379208": {
         "logo": "enet/6035.png",
         "name": "San Marino U19"
+    },
+    "257851": {
+        "logo": "enet/7795.png",
+        "name": "Saudi Arabia U17"
     }
 }
