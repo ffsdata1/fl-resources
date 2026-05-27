@@ -2934,5 +2934,17 @@
     "12781": {
         "logo": "enet/6222.png",
         "name": "Guyana U20"
+    },
+    "12705": {
+        "logo": "enet/5934.png",
+        "name": "Haiti W"
+    },
+    "9952": {
+        "logo": "enet/5934.png",
+        "name": "Haiti U17"
+    },
+    "14594": {
+        "logo": "enet/5934.png",
+        "name": "Haiti U20"
     }
 }
